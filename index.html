@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Verdict Engine | Problem-First Startup Validation</title>
+    <meta name="description"
+        content="India's Pre-Build Truth Layer. GO / PIVOT / KILL decisions backed by behavioral proof — not polite opinions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+     NAV
+     ============================================================ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">THE VERDICT ENGINE</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#crisis" class="nav-link">The Crisis</a></li>
+                <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+                <li><a href="#competition" class="nav-link">Why Giants Fail</a></li>
+                <li><a href="#sprint" class="nav-link">The Sprint</a></li>
+                <li><a href="#deliverables" class="nav-link">Deliverables</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#vision" class="nav-link">Vision</a></li>
+            </ul>
+            <a href="#pricing" class="nav-cta">Get Your Sanity Check</a>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+     HERO · THE INDIA RECKONING
+     ============================================================ -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="eyebrow-tag">India's Pre-Build Truth Layer · Est. 2026</div>
+            <h1 class="hero-headline">
+                Proving They'll Pay<br>
+                <span class="orange">Before You Build.</span>
+            </h1>
+            <p class="hero-sub">
+                90% of Indian startups fail within five years. Most founders confuse polite feedback with market demand.
+                We are the Truth Layer that <strong>kills bad ideas before they kill your capital</strong> — with
+                Scientific Disproof.
+            </p>
+
+            <!-- Real-Time Failure Clock -->
+            <div class="failure-clock" id="clockBlock">
+                <div class="clock-label">STARTUPS THAT FAILED IN INDIA SINCE JAN 1, 2025</div>
+                <div class="clock-number" id="failureClock">0</div>
+                <div class="clock-sub">Based on 11,223 failures in 2025 · approx. 1.28 per hour · live counter</div>
+            </div>
+
+            <a href="#pricing" class="cta-primary" id="heroCtaBtn">Get Your Sanity Check — ₹4,999</a>
+
+            <div class="hero-trust">
+                <span class="trust-badge">🔒 RBI-Compliant Escrow</span>
+                <span class="trust-badge">📋 ₹1Cr Professional Indemnity</span>
+                <span class="trust-badge">⚖️ India DPDP Act 2026 Compliant</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 1 · THE STARTUP WASTE CRISIS
+     ============================================================ -->
+    <section id="crisis" class="section dark-alt">
+        <div class="container">
+            <div class="section-eyebrow">Section 1 · The Core Problem</div>
+            <h2 class="section-title">The Startup Waste Crisis</h2>
+            <p class="section-subtitle">The current ecosystem is defined by massive destruction of capital and human
+                energy. Every claim here is verified.</p>
+
+            <div class="stat-grid">
+                <div class="stat-card reveal" id="stat1">
+                    <div class="stat-number kill-color">42%</div>
+                    <div class="stat-label">Fail Due to No Market Need</div>
+                    <div class="stat-meta">The #1 cause — above funding (29%) and competition (19%)</div>
+                    <button class="source-btn"
+                        data-source="CB Insights · 'The Top 12 Reasons Startups Fail' · https://cbinsights.com">ⓘ
+                        Source</button>
+                </div>
+                <div class="stat-card reveal" id="stat2">
+                    <div class="stat-number kill-color">11,000+</div>
+                    <div class="stat-label">Indian Startups Shuttered in 2025</div>
+                    <div class="stat-meta">A 30% increase from the previous year alone</div>
+                    <button class="source-btn"
+                        data-source="India's Startup Reckoning 2025: Data-Driven Analysis of Market Correction · deutsche.dk">ⓘ
+                        Source</button>
+                </div>
+                <div class="stat-card reveal" id="stat3">
+                    <div class="stat-number kill-color">90%</div>
+                    <div class="stat-label">Indian Startups Fail Within 5 Years</div>
+                    <div class="stat-meta">Across all sectors, stages, and funding levels</div>
+                    <button class="source-btn"
+                        data-source="The Ultimate Startup Guide With Statistics (2024–2025) · Founders Factory · ff.co">ⓘ
+                        Source</button>
+                </div>
+                <div class="stat-card reveal" id="stat4">
+                    <div class="stat-number kill-color">255%</div>
+                    <div class="stat-label">Founders Overestimate Idea Value</div>
+                    <div class="stat-meta">Leads directly to the "zombie startup" phase: operational but stagnant</div>
+                    <button class="source-btn"
+                        data-source="Aticus Peterson · NYU Stern · 'Can AI Outperform Humans in Strategic Decision-Making' · stern.nyu.edu">ⓘ
+                        Source</button>
+                </div>
+            </div>
+
+            <div class="crisis-callout reveal">
+                <span class="callout-label">The Validation Gap</span>
+                <p>Founders frequently confuse <strong>"polite feedback"</strong> with <strong>"market demand."</strong>
+                    This distinction is the difference between a funded company and a zombie startup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 2 · OUR PHILOSOPHY
+     ============================================================ -->
+    <section id="philosophy" class="section dark-base">
+        <div class="container">
+            <div class="section-eyebrow">Section 2 · Our Philosophy</div>
+            <h2 class="section-title">Survival Through Scientific Disproof</h2>
+            <p class="section-subtitle">We believe <strong>Problem Strength</strong> is the only reliable predictor of
+                success. We do not validate features; we validate the "Job-to-be-Done" (JTBD).</p>
+
+            <div class="philosophy-grid">
+                <div class="phil-card reveal">
+                    <div class="phil-icon">🎯</div>
+                    <h3>Pain over Features</h3>
+                    <p>If the problem is not a <strong>"Top 3" priority</strong> for the user, they will not pay to
+                        solve it. We don't chase feature requests — we hunt for bleeding problems.</p>
+                </div>
+                <div class="phil-card reveal">
+                    <div class="phil-icon">📊</div>
+                    <h3>Evidence over Opinions</h3>
+                    <p>We do not ask users what they <em>might</em> do. We measure what they <strong>have already
+                            done</strong> — past behavior is the only honest signal.</p>
+                </div>
+                <div class="phil-card reveal">
+                    <div class="phil-icon">⚖️</div>
+                    <h3>Disproof over Validation</h3>
+                    <p>Our goal is not to confirm your idea. It is to <strong>destroy it scientifically</strong>. If it
+                        survives our process, it's real.</p>
+                </div>
+            </div>
+
+            <!-- Bridge to next section -->
+            <div class="section-bridge reveal">
+                <p>This philosophy directly exposes why existing market research tools fail founders — starting with the
+                    AI problem.</p>
+                <a href="#competition" class="bridge-link">See why current solutions fall short →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 3 · WHY GIANTS FAIL (TABBED COMPETITION)
+     ============================================================ -->
+    <section id="competition" class="section dark-alt">
+        <div class="container">
+            <div class="section-eyebrow">Section 3 · Competitive Defense</div>
+            <h2 class="section-title">Why the Giants Fail</h2>
+            <p class="section-subtitle">Three separate failure modes, each examined independently. Then — how we correct
+                all three.</p>
+
+            <!-- Tab Navigation -->
+            <div class="comp-tabs" id="compTabs">
+                <button class="comp-tab active" data-tab="ai">
+                    <span class="tab-num">A</span>
+                    The AI Problem
+                </button>
+                <button class="comp-tab" data-tab="usertesting">
+                    <span class="tab-num">B</span>
+                    UserTesting.com
+                </button>
+                <button class="comp-tab" data-tab="prelaunch">
+                    <span class="tab-num">C</span>
+                    PreLaunch.com
+                </button>
+                <button class="comp-tab" data-tab="verdict">
+                    <span class="tab-num orange">→</span>
+                    How We Stand Out
+                </button>
+            </div>
+
+            <!-- Tab: AI Problem -->
+            <div class="comp-panel active" id="tab-ai">
+                <div class="comp-header">
+                    <div>
+                        <h3>The Technological Edge</h3>
+                        <p class="comp-subcopy">Why AI alone can't do what we do</p>
+                    </div>
+                    <div class="comp-verdict-badge kill">Fatal Flaw</div>
+                </div>
+                <p class="comp-intro">AI is our accelerator, but it cannot be our judge. The emergence of "Synthetic
+                    Users" (AI personas) creates a dangerous <strong>"Hallucination Gap."</strong></p>
+                <div class="flaw-list">
+                    <div class="flaw-item reveal">
+                        <div class="flaw-icon">🧠</div>
+                        <div class="flaw-body">
+                            <h4>The "Lived Experience" Gap</h4>
+                            <p>AI lacks the messy reality of being human. A synthetic persona will never rage-click
+                                because of a cultural nuance or get distracted by a crying baby in the background.</p>
+                            <button class="source-btn"
+                                data-source="'The Synthetic vs Organic User Debate' · userology.co · Feb 2026">ⓘ
+                                Source</button>
+                        </div>
+                    </div>
+                    <div class="flaw-item reveal">
+                        <div class="flaw-icon">🤖</div>
+                        <div class="flaw-body">
+                            <h4>The Sycophancy Problem</h4>
+                            <p>AI-generated users are inherently "people-pleasers." They tend to praise every idea
+                                because they are programmed to be helpful, leading to false positives and the
+                                <strong>"Hallucinated Customer" trap.</strong></p>
+                            <button class="source-btn"
+                                data-source="Interaction Design Foundation · 'Are AI-Generated Synthetic Users Replacing Personas?' · 2026">ⓘ
+                                Source</button>
+                        </div>
+                    </div>
+                    <div class="flaw-item reveal">
+                        <div class="flaw-icon">📉</div>
+                        <div class="flaw-body">
+                            <h4>The Unprecedented Failure</h4>
+                            <p>AI works by interpolating historical data. It fails catastrophically when predicting
+                                behavior for groundbreaking or "unknown unknown" technologies where no prior data
+                                exists.</p>
+                            <button class="source-btn"
+                                data-source="Research Live · 'Preview of 2026: Synthetic Data' · research-live.com">ⓘ
+                                Source</button>
+                        </div>
+                    </div>
+                    <div class="flaw-item reveal">
+                        <div class="flaw-icon">⚖️</div>
+                        <div class="flaw-body">
+                            <h4>Accountability & Liability</h4>
+                            <p>You cannot outsource responsibility to an algorithm. Under the India DPDP Act 2026, firms
+                                remain fully liable for advice outputs — an algorithm cannot provide the <strong>"Trust
+                                    Moat"</strong> or human oversight required by high-stakes investors.</p>
+                            <button class="source-btn"
+                                data-source="KaroInsure · 'Insurance for Startups in India' · karoinsure.com">ⓘ
+                                Source</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: UserTesting -->
+            <div class="comp-panel" id="tab-usertesting">
+                <div class="comp-header">
+                    <div>
+                        <h3>UserTesting.com (2026)</h3>
+                        <p class="comp-subcopy">Industry leader in Experience Research — but a Recording Platform, not a
+                            Strategic Judge</p>
+                    </div>
+                    <div class="comp-verdict-badge pivot">Recording Platform</div>
+                </div>
+                <p class="comp-intro">UserTesting.com captures <em>what</em> users did and <em>where</em> they clicked.
+                    It cannot tell you <strong>why they won't pay</strong> — and that is the only question that matters.
+                </p>
+                <div class="comp-breakdown-grid">
+                    <div class="breakdown-item reveal">
+                        <div class="breakdown-label">Output Type</div>
+                        <div class="breakdown-val">Video recordings, transcripts, and AI sentiment mapping</div>
+                        <button class="source-btn" data-source="UserTesting AI Features · help.usertesting.com · 2026">ⓘ
+                            Source</button>
+                    </div>
+                    <div class="breakdown-item reveal">
+                        <div class="breakdown-label">Data Depth</div>
+                        <div class="breakdown-val">Descriptive — tells you what users did and where they clicked</div>
+                    </div>
+                    <div class="breakdown-item reveal">
+                        <div class="breakdown-label">Focus Area</div>
+                        <div class="breakdown-val">UI/UX Usability — "Can users find the button?"</div>
+                        <button class="source-btn"
+                            data-source="UserTesting · 'AI in UX research: 2026 trends' · usertesting.com">ⓘ
+                            Source</button>
+                    </div>
+                    <div class="breakdown-item reveal">
+                        <div class="breakdown-label">Commitment</div>
+                        <div class="breakdown-val">Captures "People-Pleasing" opinions — no financial skin in the game
+                        </div>
+                    </div>
+                    <div class="breakdown-item reveal">
+                        <div class="breakdown-label">AI Integration</div>
+                        <div class="breakdown-val">"AI Test Creation" and automatic smart tags — good for rough drafts,
+                            not high-stakes decisions</div>
+                        <button class="source-btn"
+                            data-source="UserTesting · 'AI insight summary' Knowledge Base · usertesting.com">ⓘ
+                            Source</button>
+                    </div>
+                </div>
+                <div class="comp-strategy-note reveal">
+                    <strong>Strategy Note:</strong> We can leverage UserTesting.com's reports to analyze tactical UI
+                    issues, but their AI-driven results are typically for "rough drafts" and lack the precision required
+                    for high-stakes business model decisions.
+                </div>
+            </div>
+
+            <!-- Tab: PreLaunch -->
+            <div class="comp-panel" id="tab-prelaunch">
+                <div class="comp-header">
+                    <div>
+                        <h3>PreLaunch.com</h3>
+                        <p class="comp-subcopy">Validates "interest" — but interest is not demand</p>
+                    </div>
+                    <div class="comp-verdict-badge pivot">Superficial Interest</div>
+                </div>
+                <p class="comp-intro">PreLaunch.com is built on waitlists and email signups. This measures
+                    <strong>curiosity</strong>, not <strong>willingness to pay</strong>. A founder with 10,000 waitlist
+                    signups can still have zero customers.</p>
+                <div class="flaw-list">
+                    <div class="flaw-item reveal">
+                        <div class="flaw-icon">📧</div>
+                        <div class="flaw-body">
+                            <h4>No Financial Commitment</h4>
+                            <p>An email address costs nothing. Signing up for a waitlist requires zero sacrifice —
+                                making it a near-worthless signal of actual demand.</p>
+                        </div>
+                    </div>
+                    <div class="flaw-item reveal">
+                        <div class="flaw-icon">🪞</div>
+                        <div class="flaw-body">
+                            <h4>Validates "Interest," Not "Pain Intensity"</h4>
+                            <p>A person can be interested in a solution without having a painful enough problem to pay
+                                for it. Interest ≠ Revenue.</p>
+                        </div>
+                    </div>
+                    <div class="flaw-item reveal">
+                        <div class="flaw-icon">🛑</div>
+                        <div class="flaw-body">
+                            <h4>No "Mom Test" Deep-Dive</h4>
+                            <p>Without structured behavioral interviews, founders cannot discover the user's current
+                                "hacks" — the real evidence that a problem exists and is urgent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: How We Stand Out -->
+            <div class="comp-panel" id="tab-verdict">
+                <div class="comp-header">
+                    <div>
+                        <h3>PFSV: The Verdict Engine</h3>
+                        <p class="comp-subcopy">How we correct every failure mode — and why we are categorically
+                            different</p>
+                    </div>
+                    <div class="comp-verdict-badge go">Strategic Judge</div>
+                </div>
+                <p class="comp-intro">We are not a recording platform, a waitlist tool, or an AI chatbot. We are a
+                    <strong>Strategic Judge</strong> — the only solution that combines human depth, behavioral evidence,
+                    and mandatory financial commitment.</p>
+
+                <div class="standout-grid">
+                    <div class="standout-card reveal">
+                        <div class="standout-dim">Output Type</div>
+                        <div class="standout-val">Definitive <span class="badge-go-inline">GO</span> / <span
+                                class="badge-pivot-inline">PIVOT</span> / <span class="badge-kill-inline">KILL</span>
+                            strategic verdict with accountability</div>
+                    </div>
+                    <div class="standout-card reveal">
+                        <div class="standout-dim">Data Depth</div>
+                        <div class="standout-val"><strong>Prescriptive</strong> — tells you <em>why they won't pay</em>
+                            and exactly <em>how to pivot</em></div>
+                    </div>
+                    <div class="standout-card reveal">
+                        <div class="standout-dim">Focus Area</div>
+                        <div class="standout-val"><strong>Business Viability</strong> — "Should this startup exist at
+                            all?"</div>
+                    </div>
+                    <div class="standout-card reveal">
+                        <div class="standout-dim">Commitment</div>
+                        <div class="standout-val">Forces real <strong>"Money Signals"</strong> — paid pre-orders or
+                            signed LOIs. Willingness to pay is mandatory.</div>
+                    </div>
+                    <div class="standout-card reveal">
+                        <div class="standout-dim">AI Role</div>
+                        <div class="standout-val"><strong>AI accelerates</strong> research. <strong>Humans
+                                deliver</strong> the verdict. No hallucinated customers.</div>
+                    </div>
+                    <div class="standout-card reveal">
+                        <div class="standout-dim">Accountability</div>
+                        <div class="standout-val">₹1 Crore Professional Indemnity coverage. We stand behind every
+                            verdict legally.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 4 · THE 30-DAY SPRINT
+     ============================================================ -->
+    <section id="sprint" class="section dark-base">
+        <div class="container">
+            <div class="section-eyebrow">Section 4 · Operational Model</div>
+            <h2 class="section-title">The 30-Day Validation Sprint</h2>
+            <p class="section-subtitle">We provide <strong>Confidence-as-a-Service.</strong> Input: An Idea. Output: A
+                definitive GO / PIVOT / KILL decision backed by behavioral proof.</p>
+
+            <div class="sprint-timeline">
+                <div class="sprint-step reveal" id="sprint1">
+                    <div class="sprint-top">
+                        <span class="sprint-num">Phase 1</span>
+                        <span class="sprint-badge">Problem Stress-Testing</span>
+                    </div>
+                    <h3>Mom Test Interviews</h3>
+                    <p><strong>Framework:</strong> 15–20 structured "Mom Test" interviews focusing on past behavior and
+                        current hacks — never hypothetical future intent.</p>
+                    <div class="sprint-metric">
+                        <strong>Metric:</strong> Problem Stack Ranking. We ask users to rank their daily struggles. If
+                        your product doesn't crack the Top 3, we immediately flag a "PIVOT."
+                    </div>
+                </div>
+
+                <div class="sprint-connector">↓</div>
+
+                <div class="sprint-step reveal" id="sprint2">
+                    <div class="sprint-top">
+                        <span class="sprint-num">Phase 2</span>
+                        <span class="sprint-badge">Behavioral Demand</span>
+                    </div>
+                    <h3>Smoke Test Experiments</h3>
+                    <p><strong>Action:</strong> Build a high-fidelity "Fake Door" landing page or WhatsApp funnel. No
+                        code required.</p>
+                    <div class="sprint-metric">
+                        <strong>Data Tracking:</strong> We measure Activation Rate and drop-off points at the pricing
+                        page — where intent meets reality.
+                    </div>
+                </div>
+
+                <div class="sprint-connector">↓</div>
+
+                <div class="sprint-step reveal sprint-mandatory" id="sprint3">
+                    <div class="sprint-top">
+                        <span class="sprint-num">Phase 3</span>
+                        <span class="sprint-badge mandatory-tag">MANDATORY</span>
+                    </div>
+                    <h3>The Money Signal</h3>
+                    <p>We do not believe in validation without financial commitment. This phase is non-negotiable. At
+                        least one of the following must occur:</p>
+                    <ul class="sprint-list">
+                        <li>Paid pre-order via <strong>RBI-compliant digital escrow</strong> (RazorpayX or Castler)</li>
+                        <li>Paid pilot engagement</li>
+                        <li>Signed B2B Letter of Intent (LOI)</li>
+                    </ul>
+                </div>
+
+                <div class="sprint-connector">↓</div>
+
+                <div class="sprint-step reveal" id="sprint4">
+                    <div class="sprint-top">
+                        <span class="sprint-num">Phase 4</span>
+                        <span class="sprint-badge">Risk Mapping & Founder Fit</span>
+                    </div>
+                    <h3>The Verdict</h3>
+                    <p><strong>Analysis:</strong> We assess switching costs, market saturation, and founder-market fit.
+                    </p>
+                    <p style="margin-top:0.75rem"><strong>Output:</strong> A <strong>0–100 Validation Score</strong> and
+                        an investor-ready <strong>"Bankable Validation Pack."</strong></p>
+                    <div class="verdict-row">
+                        <span class="verdict-badge badge-go">✓ GO</span>
+                        <span class="verdict-badge badge-pivot">⚠ PIVOT</span>
+                        <span class="verdict-badge badge-kill">✕ KILL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 5 · DELIVERABLES MASTER LIST
+     ============================================================ -->
+    <section id="deliverables" class="section dark-alt">
+        <div class="container">
+            <div class="section-eyebrow">Section 5 · What You Get</div>
+            <h2 class="section-title">The Master List of Deliverables</h2>
+            <p class="section-subtitle">Regardless of the package, these are the high-value items we provide. Click any
+                category to expand.</p>
+
+            <div class="accordion" id="deliverableAccordion">
+                <div class="accord-item reveal">
+                    <button class="accord-header" id="acc1">
+                        <span class="accord-icon">📋</span>
+                        <span class="accord-title">Strategic Research</span>
+                        <span class="accord-arrow">↓</span>
+                    </button>
+                    <div class="accord-body" id="body-acc1">
+                        <ul>
+                            <li>Industry gap analysis</li>
+                            <li>Competitor "white space" audit</li>
+                            <li>Bottom-up market sizing (TAM / SAM / SOM)</li>
+                            <li>Problem Strength Score (0–100)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accord-item reveal">
+                    <button class="accord-header" id="acc2">
+                        <span class="accord-icon">🎙️</span>
+                        <span class="accord-title">Human Signals</span>
+                        <span class="accord-arrow">↓</span>
+                    </button>
+                    <div class="accord-body" id="body-acc2">
+                        <ul>
+                            <li>Structured "Mom Test" interviews (10–20 sessions)</li>
+                            <li>Problem Stack Ranking — finding the user's Top 3 pains</li>
+                            <li>Pain Intensity Scoring</li>
+                            <li>Report on current user "hacks" (what people use today to solve the pain)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accord-item reveal">
+                    <button class="accord-header" id="acc3">
+                        <span class="accord-icon">💻</span>
+                        <span class="accord-title">Digital Evidence</span>
+                        <span class="accord-arrow">↓</span>
+                    </button>
+                    <div class="accord-body" id="body-acc3">
+                        <ul>
+                            <li>High-fidelity "Fake Door" landing pages</li>
+                            <li>Intent-based ad sprints (Meta / LinkedIn / Google)</li>
+                            <li>Heatmaps and behavioral funnel tracking</li>
+                            <li>Activation Rate measurement and drop-off analysis</li>
+                            <li>Verified Intent Action report (clicks-to-buy vs. signups)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accord-item reveal">
+                    <button class="accord-header" id="acc4">
+                        <span class="accord-icon">💰</span>
+                        <span class="accord-title">Financial Proof</span>
+                        <span class="accord-arrow">↓</span>
+                    </button>
+                    <div class="accord-body" id="body-acc4">
+                        <ul>
+                            <li>RBI-compliant digital escrow setup for pre-orders (via RazorpayX or Castler)</li>
+                            <li>Willingness-to-Pay benchmarks</li>
+                            <li>Revenue-path modeling</li>
+                            <li>Paid pilot or signed B2B Letter of Intent (LOI) coordination</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accord-item reveal">
+                    <button class="accord-header" id="acc5">
+                        <span class="accord-icon">⚖️</span>
+                        <span class="accord-title">Advisory Verdicts</span>
+                        <span class="accord-arrow">↓</span>
+                    </button>
+                    <div class="accord-body" id="body-acc5">
+                        <ul>
+                            <li>1-on-1 "Kill or Build" expert consultation</li>
+                            <li>Strategic pivot roadmaps</li>
+                            <li>A "Validation Strength" certificate for investor credibility</li>
+                            <li>Investor-ready "Bankable Validation Pack"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 6 · PRICING
+     ============================================================ -->
+    <section id="pricing" class="section dark-base">
+        <div class="container">
+            <div class="section-eyebrow">Section 6 · Revenue Model</div>
+            <h2 class="section-title">Confidence-as-a-Service</h2>
+            <p class="section-subtitle">We sell <strong>Time-to-Traction</strong> — helping founders get their first
+                "Yes" from a real customer. Every tier ends with a verdict.</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card reveal" id="price1">
+                    <div class="pricing-for">Students / Side-Hustlers</div>
+                    <div class="pricing-tier">The Sanity Check</div>
+                    <div class="pricing-amount">₹4,999</div>
+                    <div class="pricing-label">72-hour Rapid Audit</div>
+                    <ul class="pricing-features">
+                        <li>Desk research audit</li>
+                        <li>Competitive gap report</li>
+                        <li>Industry gap analysis</li>
+                        <li>Problem Strength Score (0–100)</li>
+                        <li>1× "Kill or Build" expert call (30 min)</li>
+                    </ul>
+                    <a href="#contact" class="pricing-cta">Start Here</a>
+                </div>
+
+                <div class="pricing-card reveal" id="price2">
+                    <div class="pricing-for">Solo Founders</div>
+                    <div class="pricing-tier">The Truth Hunt</div>
+                    <div class="pricing-amount">₹15,999</div>
+                    <div class="pricing-label">Deep Human Research</div>
+                    <ul class="pricing-features">
+                        <li>Everything in Sanity Check</li>
+                        <li>10 Human "Mom Test" interviews</li>
+                        <li>Problem Stack Ranking (Top 3 pains)</li>
+                        <li>Report on current user "hacks"</li>
+                        <li>Pain Intensity Scoring</li>
+                    </ul>
+                    <a href="#contact" class="pricing-cta">Get Started</a>
+                </div>
+
+                <div class="pricing-card featured reveal" id="price3">
+                    <div class="pricing-badge">Most Chosen</div>
+                    <div class="pricing-for">Pre-Seed Teams</div>
+                    <div class="pricing-tier">The Revenue Pilot</div>
+                    <div class="pricing-amount">₹49,999</div>
+                    <div class="pricing-label">Full Demand Simulation</div>
+                    <ul class="pricing-features">
+                        <li>Everything in Truth Hunt</li>
+                        <li>"Fake Door" landing page</li>
+                        <li>7-day targeted ad sprint (₹5k ads included)</li>
+                        <li>Verified Intent Action report</li>
+                        <li>Clicks-to-buy vs. signups analysis</li>
+                        <li>GO / PIVOT / KILL verdict</li>
+                    </ul>
+                    <a href="#contact" class="pricing-cta primary">Get Started</a>
+                </div>
+            </div>
+
+            <div class="pricing-note reveal">
+                <strong>Why this works:</strong> It moves focus away from "investors" and back onto
+                <strong>Revenue</strong>. Founders will pay ₹49k if it helps them find their first 10 customers.
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 6b · OPERATIONAL COST BREAKDOWN
+     ============================================================ -->
+    <section class="section dark-alt">
+        <div class="container">
+            <div class="section-eyebrow">Section 6 · Sustainability</div>
+            <h2 class="section-title">Monthly Burn & Break-Even</h2>
+            <p class="section-subtitle">To keep pricing accessible, we automate the "grunt work" using AI — keeping our
+                cost base deliberately lean.</p>
+
+            <div class="cost-table-wrap reveal">
+                <table class="cost-table">
+                    <thead>
+                        <tr>
+                            <th>Expense Category</th>
+                            <th>Monthly Cost (INR)</th>
+                            <th>Purpose & Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Core Team (2 Interns)</strong></td>
+                            <td class="cost-num">₹28,000</td>
+                            <td>1 Research Intern + 1 Design Intern (AI-assisted)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>The "Truth Hub" Software</strong></td>
+                            <td class="cost-num">₹6,000</td>
+                            <td>AI agents for transcript summary + landing page builders</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cloud & Data Storage</strong></td>
+                            <td class="cost-num">₹1,500</td>
+                            <td>Securing the proprietary "Truth Index" database</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lead Generation (Ads)</strong></td>
+                            <td class="cost-num">₹10,000</td>
+                            <td>Targeted LinkedIn ads to founders in "Danger Zones" (HealthTech / D2C)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trust Layer (Legal / Insurance)</strong></td>
+                            <td class="cost-num">₹2,000</td>
+                            <td>Professional Indemnity Insurance to protect "KILL" verdicts</td>
+                        </tr>
+                        <tr class="cost-total-row">
+                            <td><strong>Total Monthly Burn</strong></td>
+                            <td class="cost-num orange">₹47,500</td>
+                            <td><strong>Break-even: Just 10 "Sanity Checks" per month</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="margin-note reveal">
+                <strong>Target Gross Margin: 50%+</strong> — achieved by using AI to handle the "grunt work" of market
+                scanning and transcript synthesis, so human expertise is reserved exclusively for verdict-level
+                judgment.
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 7 · THE TRUTH INDEX (MOAT)
+     ============================================================ -->
+    <section id="truth-index" class="section dark-base">
+        <div class="container">
+            <div class="section-eyebrow">Section 7 · The Non-Typical Revenue Stream</div>
+            <h2 class="section-title">The Truth Index</h2>
+            <p class="section-subtitle">Most agencies sell their time. We sell our <strong>Insights</strong>. As we run
+                hundreds of validation sprints, we build the most valuable dataset in India.</p>
+
+            <div class="truth-explainer reveal">
+                <div class="truth-what">
+                    <h3>What We Build</h3>
+                    <p>Every validation sprint generates proprietary data on <strong>"Hair-on-Fire" problems</strong> in
+                        specific Indian sectors — healthcare in Tier 2 cities, AgriTech, D2C, and more. This data
+                        compounds over time.</p>
+                </div>
+                <div class="truth-who">
+                    <h3>Who Buys It</h3>
+                    <p><strong>Venture Capital firms</strong> and <strong>Corporate Innovation labs</strong> (Zomato,
+                        Reliance, etc.) pay a monthly retainer to access our anonymized database — to see which problems
+                        have the highest "Pain Intensity" and "Willingness to Pay" scores before they fund or build.</p>
+                </div>
+                <div class="truth-price">
+                    <h3>The Model</h3>
+                    <p>A monthly subscription at <strong>₹50,000/month per VC</strong> — providing problem-market fit
+                        intelligence before investment decisions. Passive income that requires no extra labor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 7b · LONG-TERM VISION
+     ============================================================ -->
+    <section id="vision" class="section dark-alt">
+        <div class="container">
+            <div class="section-eyebrow">Section 7 · Long-Term Vision</div>
+            <h2 class="section-title">From Service Provider to Venture Authority</h2>
+
+            <div class="vision-phases">
+                <div class="vision-phase reveal" id="vp1">
+                    <div class="phase-num">Phase I</div>
+                    <h3>Managed Validation Service</h3>
+                    <p>Deliver GO / PIVOT / KILL decisions for founders across Tier 1 and Tier 2 Indian cities, building
+                        our proprietary behavioral dataset sprint by sprint.</p>
+                    <div class="phase-status current">Active Now</div>
+                </div>
+                <div class="vision-arrow">→</div>
+                <div class="vision-phase reveal" id="vp2">
+                    <div class="phase-num">Phase II</div>
+                    <h3>The Validation Badge</h3>
+                    <p>A trust signal to VCs — a product carrying our badge has <strong>verified demand backed by
+                            financial commitment</strong>, not market-survey optimism.</p>
+                    <div class="phase-status upcoming">Next</div>
+                </div>
+                <div class="vision-arrow">→</div>
+                <div class="vision-phase reveal highlight-phase" id="vp3">
+                    <div class="phase-num">Phase III</div>
+                    <h3>India's Startup Risk Index</h3>
+                    <p>Using our proprietary behavioral database to predict <strong>sector-wide survival rates</strong>.
+                        We license this to VCs. We become India's pre-build oracle for venture capital.</p>
+                    <div class="phase-status future">The Moat</div>
+                </div>
+            </div>
+
+            <div class="final-shift reveal">
+                <p>We are not building a marketing agency.</p>
+                <p class="final-statement">We are building <span class="orange">India's Pre-Build Truth Layer.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SECTION 8 · LEGAL & COMPLIANCE
+     ============================================================ -->
+    <section id="legal" class="section dark-base">
+        <div class="container">
+            <div class="section-eyebrow">Section 8 · Legal & Compliance</div>
+            <h2 class="section-title">Trust Backed by Law</h2>
+
+            <div class="legal-grid">
+                <div class="legal-card reveal">
+                    <div class="legal-icon">🛡️</div>
+                    <h3>Professional Indemnity Insurance</h3>
+                    <p>We carry Errors & Omissions (E&O) insurance to protect against service mistakes — with <strong>₹1
+                            Crore cover</strong> starting as low as <strong>₹1,770/year</strong>. We stand behind every
+                        KILL verdict legally.</p>
+                    <button class="source-btn"
+                        data-source="PolicyBazaar · 'Professional Indemnity Insurance' · policybazaar.com">ⓘ
+                        Source</button>
+                </div>
+                <div class="legal-card reveal">
+                    <div class="legal-icon">🔒</div>
+                    <h3>RBI-Compliant Digital Escrow</h3>
+                    <p>We utilize <strong>RazorpayX</strong> or <strong>Castler</strong> to hold pre-order funds —
+                        providing the ultimate proof of "Willingness to Pay" without taking on transaction risk
+                        ourselves. Fully RBI and FEMA compliant.</p>
+                    <button class="source-btn"
+                        data-source="The Pre-Seed Funding Hierarchy: What 2026 Startups Reveal · neosfera.io">ⓘ
+                        Source</button>
+                </div>
+                <div class="legal-card reveal">
+                    <div class="legal-icon">⚖️</div>
+                    <h3>India DPDP Act 2026</h3>
+                    <p>All data collected during validation sprints is handled in full compliance with the <strong>India
+                            Digital Personal Data Protection Act 2026.</strong> No client data is shared without
+                        explicit consent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     REFERENCES
+     ============================================================ -->
+    <section id="references" class="section dark-alt">
+        <div class="container">
+            <div class="section-eyebrow">Works Cited</div>
+            <h2 class="section-title" style="font-size:2rem">Research References</h2>
+            <p class="section-subtitle">Every claim in this document is traceable. All sources accessed between February
+                13–16, 2026.</p>
+
+            <div class="references-list reveal">
+                <ol class="ref-ol">
+                    <li><a href="https://deutsche.dk/blogs/india-startup-reckoning-2025-market-correction"
+                            target="_blank" rel="noopener">India's Startup Reckoning 2025: Data-Driven Analysis of
+                            Market Correction</a> — deutsche.dk</li>
+                    <li><a href="https://www.stern.nyu.edu/experience-stern/faculty-research/can-ai-outperform-humans-strategic-decision-making"
+                            target="_blank" rel="noopener">Can AI Outperform Humans in Strategic Decision-Making —
+                            Aticus Peterson</a> — NYU Stern</li>
+                    <li><a href="https://askditto.io/news/best-ai-market-research-tools-the-2026-buyers-guide"
+                            target="_blank" rel="noopener">Best AI Market Research Tools: The 2026 Buyer's Guide</a> —
+                        Ditto / askditto.io</li>
+                    <li><a href="https://www.startupchai.in/p/the-weekend-insight-the-rise-of-pre-pmf-agencies-how-startups-now-validate-before-they-build"
+                            target="_blank" rel="noopener">The Rise of Pre-PMF Agencies: How Startups Now Validate
+                            Before They Build</a> — StartupChai</li>
+                    <li><a href="https://anderscpa.com/learn/blog/agency-profitability/" target="_blank"
+                            rel="noopener">Boost Agency Profitability by Improving Your Gross Profit Margin</a> — Anders
+                        CPA</li>
+                    <li><a href="https://ff.co/startup-statistics-guide/" target="_blank" rel="noopener">The Ultimate
+                            Startup Guide With Statistics (2024–2025)</a> — Founders Factory</li>
+                    <li><a href="https://neosfera.io/insights/pre-seed-funding-hierarchy-2026" target="_blank"
+                            rel="noopener">The Pre-Seed Funding Hierarchy: What 25 January 2026 Startups Reveal</a> —
+                        Neosfera</li>
+                    <li><a href="https://www.valueships.com/post/ai-pricing-in-2026" target="_blank" rel="noopener">AI
+                            Pricing in 2026: SaaS pricing models that actually work</a> — Valueships</li>
+                    <li><a href="https://www.reddit.com/r/StartUpIndia/comments/1quo940/should_young_founders_build_for_indian_b2b/"
+                            target="_blank" rel="noopener">Should young founders build for Indian B2B?</a> —
+                        r/StartUpIndia, Reddit</li>
+                    <li><a href="https://help.usertesting.com/hc/en-us/articles/13268801005469-UserTesting-and-Artificial-Intelligence"
+                            target="_blank" rel="noopener">UserTesting and Artificial Intelligence</a> — UserTesting
+                        Knowledge Base</li>
+                    <li><a href="https://masterofcode.com/blog/generative-ai-statistics" target="_blank"
+                            rel="noopener">350+ Generative AI Statistics [January 2026]</a> — Master of Code</li>
+                    <li><a href="https://www.usertesting.com/resources/podcast/customer-trends-ux-research"
+                            target="_blank" rel="noopener">AI in UX research: 2026 trends and impact</a> — UserTesting
+                    </li>
+                    <li><a href="https://karoinsure.com/blog/insurance-for-startups-in-india" target="_blank"
+                            rel="noopener">Insurance for Startups in India – Protect Your New Venture</a> — KaroInsure
+                    </li>
+                    <li><a href="https://www.domo.com/learn/article/decision-intelligence-platforms" target="_blank"
+                            rel="noopener">10 Decision Intelligence Platforms to Consider in 2025</a> — Domo</li>
+                    <li><a href="https://www.usertesting.com/resources/podcast/smarter-faster-customer-insights"
+                            target="_blank" rel="noopener">The future of customer insights at UserTesting in 2026</a> —
+                        UserTesting</li>
+                    <li><a href="https://www.omnibound.ai/blog/b2b-pricing" target="_blank" rel="noopener">B2B Pricing
+                            (2026 Guide): Strategy, Models, Optimization</a> — Omnibound</li>
+                    <li><a href="https://www.research-live.com/article/features/preview-of-2026-synthetic-data/id/5145656"
+                            target="_blank" rel="noopener">Preview of 2026: Synthetic Data</a> — Research Live</li>
+                    <li><a href="https://www.interaction-design.org/literature/article/ai-vs-researched-personas"
+                            target="_blank" rel="noopener">Are AI-Generated Synthetic Users Replacing Personas?</a> —
+                        Interaction Design Foundation</li>
+                    <li><a href="https://www.policybazaar.com/commercial-insurance/professional-indemnity-insurance/"
+                            target="_blank" rel="noopener">Professional Indemnity Insurance</a> — PolicyBazaar</li>
+                    <li><a href="https://help.usertesting.com/hc/en-us/articles/11880360064029-Sentiment-analysis"
+                            target="_blank" rel="noopener">Sentiment Analysis</a> — UserTesting Knowledge Base</li>
+                    <li><a href="https://ideaproof.io/lists/pricing-strategies" target="_blank" rel="noopener">15 Best
+                            Pricing Strategies for SaaS & Startups 2026</a> — IdeaProof</li>
+                    <li><a href="https://help.usertesting.com/hc/en-us/articles/13268691111453-AI-insight-summary"
+                            target="_blank" rel="noopener">AI insight summary</a> — UserTesting Knowledge Base</li>
+                    <li><a href="https://www.reddit.com/r/agency/comments/1n66u8g/performance_marketing_and_the_problem_with/"
+                            target="_blank" rel="noopener">Performance Marketing and the Problem with Guarantees</a> —
+                        r/agency, Reddit</li>
+                    <li><a href="https://www.userology.co/blogs/synthetic-vs-organic-user-research-2026" target="_blank"
+                            rel="noopener">The "Synthetic" vs. "Organic" User Debate: Where Do We Draw the Line in
+                            2026?</a> — Userology</li>
+                    <li><a href="https://developmentcorporate.com/saas/synthetic-responses-market-research-2025/"
+                            target="_blank" rel="noopener">Synthetic Responses in Market Research: Promise vs. Reality
+                            in 2025</a> — Development Corporate</li>
+                    <li><a href="https://influenceflow.io/resources/digital-marketing-agency-pricing-complete-2026-guide-to-costs-models-roi/"
+                            target="_blank" rel="noopener">Digital Marketing Agency Pricing: Complete 2026 Guide</a> —
+                        InfluenceFlow</li>
+                    <li><a href="https://iota-finance.com/iota-finance-blog/agency-profit-margins-2026" target="_blank"
+                            rel="noopener">Agency Profit Margins: 2026 Benchmarks and How to Improve Yours</a> — Iota
+                        Finance</li>
+                    <li><a href="https://www.surveymonkey.com/learn/marketing/ai-marketing-statistics/" target="_blank"
+                            rel="noopener">AI In Marketing Statistics: How Marketers Use AI In 2025</a> — SurveyMonkey
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>The Verdict Engine</h3>
+                    <p>Problem-First Startup Validation (PFSV)</p>
+                    <p class="footer-tagline">Built for the Age of AI,<br>Rooted in Human Truth.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Sections</h4>
+                    <a href="#crisis">The Crisis</a>
+                    <a href="#philosophy">Our Philosophy</a>
+                    <a href="#competition">Why Giants Fail</a>
+                    <a href="#sprint">The 30-Day Sprint</a>
+                    <a href="#deliverables">Deliverables</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#vision">Vision</a>
+                    <a href="#references">References</a>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p>Fully compliant with <strong>India DPDP Act 2026</strong> &middot; Professional Indemnity Coverage:
+                    <strong>₹1 Crore (E&O)</strong> &middot; RBI-compliant escrow via RazorpayX / Castler &middot; No
+                    investor brokerage</p>
+                <p class="footer-copy">&copy; 2026 The Verdict Engine · Problem-First Startup Validation. All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tooltip -->
+    <div id="sourceTooltip" class="source-tooltip" role="tooltip"></div>
+    <!-- Scroll-to-top -->
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
