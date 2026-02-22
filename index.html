@@ -24,51 +24,61 @@
         <div class="nav-container">
             <div class="nav-brand">THE VERDICT ENGINE</div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link">Home</a></li>
-                <li><a href="#crisis" class="nav-link">The Crisis</a></li>
-                <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
-                <li><a href="#competition" class="nav-link">Why Giants Fail</a></li>
+                <li><a href="#crisis" class="nav-link">Crisis</a></li>
+                <li><a href="#philosophy" class="nav-link">Truth</a></li>
+                <li><a href="#competition" class="nav-link">Giants</a></li>
                 <li><a href="#sprint" class="nav-link">The Sprint</a></li>
-                <li><a href="#deliverables" class="nav-link">Deliverables</a></li>
+                <li><a href="#deliverables" class="nav-link">Outcome</a></li>
                 <li><a href="#pricing" class="nav-link">Pricing</a></li>
                 <li><a href="#vision" class="nav-link">Vision</a></li>
             </ul>
-            <a href="#pricing" class="nav-cta">Get Your Sanity Check</a>
+            <a href="#pricing" class="nav-cta">Audit Your Idea</a>
         </div>
     </nav>
 
     <!-- ============================================================
-     HERO · THE INDIA RECKONING
+     HERO · MINIMAL AUTHORITY
      ============================================================ -->
-    <section id="hero" class="hero">
-        <div class="hero-container">
-            <div class="eyebrow-tag">India's Pre-Build Truth Layer · Est. 2026</div>
-            <h1 class="hero-headline">
-                Proving They'll Pay<br>
-                <span class="orange">Before You Build.</span>
+    <section id="hero" class="hero-premium">
+        <!-- The Glass Orb (Interactive) -->
+        <div class="glass-orb-wrap" aria-hidden="true">
+            <div class="glass-orb" id="orb"></div>
+        </div>
+
+        <div class="hero-inner">
+            <!-- Part 1: The Reality (Technical/Muted) -->
+            <div class="hero-context-line">
+                <span class="reality-text">BUILDING IS A</span>
+                <span class="tag-commodity">COMMODITY</span>
+            </div>
+
+            <!-- Part 2: The Edge (Bold/Primary) -->
+            <h1 class="hero-statement">
+                Finding the correct moat<br>is your <span class="moat-accent">only reality.</span>
             </h1>
-            <p class="hero-sub">
-                90% of Indian startups fail within five years. Most founders confuse polite feedback with market demand.
-                We are the Truth Layer that <strong>kills bad ideas before they kill your capital</strong> — with
-                Scientific Disproof.
+
+            <p class="hero-support">
+                Before you build, raise, or hire — we deliver a clear&nbsp;<span
+                    class="v-pill go">GO</span>&nbsp;/&nbsp;<span class="v-pill pivot">PIVOT</span>&nbsp;/&nbsp;<span
+                    class="v-pill kill">STOP</span> verdict backed by real human validation and financial commitment.
             </p>
 
-            <!-- Real-Time Failure Clock -->
-            <div class="failure-clock" id="clockBlock">
-                <div class="clock-label">STARTUPS THAT FAILED IN INDIA SINCE JAN 1, 2025</div>
-                <div class="clock-number" id="failureClock">0</div>
-                <div class="clock-sub">Based on 11,223 failures in 2025 · approx. 1.28 per hour · live counter</div>
-            </div>
-
-            <a href="#pricing" class="cta-primary" id="heroCtaBtn">Get Your Sanity Check — ₹4,999</a>
-
-            <div class="hero-trust">
-                <span class="trust-badge">🔒 RBI-Compliant Escrow</span>
-                <span class="trust-badge">📋 ₹1Cr Professional Indemnity</span>
-                <span class="trust-badge">⚖️ India DPDP Act 2026 Compliant</span>
+            <div class="hero-cta-group">
+                <a href="#pricing" class="btn-premium-primary" id="heroCtaBtn">Audit Your Idea</a>
+                <a href="#sprint" class="btn-premium-secondary">The Sprint Path &rarr;</a>
             </div>
         </div>
+
+        <!-- Scroll Indicator (Pure Minimal Arrow/Path) -->
+        <a href="#crisis" class="hero-scroll-path" aria-label="Scroll down">
+            <div class="path-vertical">
+                <div class="path-dot"></div>
+            </div>
+        </a>
     </section>
+
+
+
 
     <!-- ============================================================
      SECTION 1 · THE STARTUP WASTE CRISIS
@@ -120,6 +130,13 @@
                 <p>Founders frequently confuse <strong>"polite feedback"</strong> with <strong>"market demand."</strong>
                     This distinction is the difference between a funded company and a zombie startup.</p>
             </div>
+
+            <div class="crisis-callout reveal" style="border-left-color: var(--orange);">
+                <span class="callout-label" style="color: var(--orange);">The Moat Struggle</span>
+                <p>In the future, every company is a tech company. The struggle is no longer building; it's finding
+                    <strong>your correct moat</strong>. Without real data, you are just building into a crowded market.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -130,24 +147,57 @@
         <div class="container">
             <div class="section-eyebrow">Section 2 · Our Philosophy</div>
             <h2 class="section-title">Survival Through Scientific Disproof</h2>
-            <p class="section-subtitle">We believe <strong>Problem Strength</strong> is the only reliable predictor of
-                success. We do not validate features; we validate the "Job-to-be-Done" (JTBD).</p>
+            <p class="section-subtitle">We believe <strong>Moat Discovery</strong> is the only reliable path to
+                survival. We are not a consultancy; we rely on <strong>real market data</strong> to validate which
+                problems are actually worth solving in the current market.</p>
 
             <div class="philosophy-grid">
                 <div class="phil-card reveal">
-                    <div class="phil-icon">🎯</div>
+                    <div class="phil-icon">
+                        <!-- crosshair — "hunt for bleeding problems" -->
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="9" />
+                            <circle cx="11" cy="11" r="3.5" />
+                            <line x1="11" y1="1" x2="11" y2="5" />
+                            <line x1="11" y1="17" x2="11" y2="21" />
+                            <line x1="1" y1="11" x2="5" y2="11" />
+                            <line x1="17" y1="11" x2="21" y2="11" />
+                        </svg>
+                    </div>
                     <h3>Pain over Features</h3>
                     <p>If the problem is not a <strong>"Top 3" priority</strong> for the user, they will not pay to
                         solve it. We don't chase feature requests — we hunt for bleeding problems.</p>
                 </div>
                 <div class="phil-card reveal">
-                    <div class="phil-icon">📊</div>
+                    <div class="phil-icon">
+                        <!-- bar chart — "measure what they have done" -->
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="13" width="5" height="7" rx="1" />
+                            <rect x="8.5" y="7" width="5" height="13" rx="1" />
+                            <rect x="15" y="2" width="5" height="18" rx="1" />
+                            <line x1="1" y1="20" x2="21" y2="20" />
+                        </svg>
+                    </div>
                     <h3>Evidence over Opinions</h3>
                     <p>We do not ask users what they <em>might</em> do. We measure what they <strong>have already
                             done</strong> — past behavior is the only honest signal.</p>
                 </div>
                 <div class="phil-card reveal">
-                    <div class="phil-icon">⚖️</div>
+                    <div class="phil-icon">
+                        <!-- balance scale — "destroy it scientifically" -->
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11" y1="2" x2="11" y2="20" />
+                            <line x1="5" y1="20" x2="17" y2="20" />
+                            <line x1="5" y1="5" x2="17" y2="5" />
+                            <line x1="5" y1="5" x2="5" y2="12" />
+                            <line x1="17" y1="5" x2="17" y2="12" />
+                            <path d="M2 12 Q5 9 8 12" />
+                            <path d="M14 12 Q17 9 20 12" />
+                        </svg>
+                    </div>
                     <h3>Disproof over Validation</h3>
                     <p>Our goal is not to confirm your idea. It is to <strong>destroy it scientifically</strong>. If it
                         survives our process, it's real.</p>
@@ -176,37 +226,85 @@
             <!-- Tab Navigation -->
             <div class="comp-tabs" id="compTabs">
                 <button class="comp-tab active" data-tab="ai">
-                    <span class="tab-num">A</span>
+                    <span class="tab-num">
+                        <!-- AI chip / circuit brain -->
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="4" width="8" height="8" rx="1" />
+                            <line x1="6" y1="4" x2="6" y2="1" />
+                            <line x1="10" y1="4" x2="10" y2="1" />
+                            <line x1="6" y1="15" x2="6" y2="12" />
+                            <line x1="10" y1="15" x2="10" y2="12" />
+                            <line x1="12" y1="6" x2="15" y2="6" />
+                            <line x1="12" y1="10" x2="15" y2="10" />
+                            <line x1="4" y1="6" x2="1" y2="6" />
+                            <line x1="4" y1="10" x2="1" y2="10" />
+                        </svg>
+                    </span>
                     The AI Problem
                 </button>
                 <button class="comp-tab" data-tab="usertesting">
-                    <span class="tab-num">B</span>
+                    <span class="tab-num">
+                        <!-- survey clipboard — remote usertesting -->
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="12" height="12" rx="1.5" />
+                            <path d="M6 3 L6 2 Q6 1 8 1 Q10 1 10 2 L10 3" />
+                            <line x1="5" y1="7" x2="11" y2="7" />
+                            <line x1="5" y1="10" x2="9" y2="10" />
+                        </svg>
+                    </span>
                     UserTesting.com
                 </button>
                 <button class="comp-tab" data-tab="prelaunch">
-                    <span class="tab-num">C</span>
+                    <span class="tab-num">
+                        <!-- rocket launch -->
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 14 C8 14 5 11 5 7 Q5 2 8 1 Q11 2 11 7 C11 11 8 14 8 14Z" />
+                            <circle cx="8" cy="7" r="1.5" fill="currentColor" stroke="none" />
+                            <path d="M5 9 L3 11 L5 11" />
+                            <path d="M11 9 L13 11 L11 11" />
+                        </svg>
+                    </span>
                     PreLaunch.com
                 </button>
                 <button class="comp-tab" data-tab="verdict">
-                    <span class="tab-num orange">→</span>
+                    <span class="tab-num">
+                        <!-- shield with checkmark — our differentiation -->
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 1 L14 4 L14 9 C14 12.5 11 15 8 15.5 C5 15 2 12.5 2 9 L2 4 Z" />
+                            <polyline points="5.5,8 7.5,10 11,6" />
+                        </svg>
+                    </span>
                     How We Stand Out
                 </button>
             </div>
 
             <!-- Tab: AI Problem -->
             <div class="comp-panel active" id="tab-ai">
-                <div class="comp-header">
+                <div class="comp-panel-bar">
                     <div>
-                        <h3>The Technological Edge</h3>
-                        <p class="comp-subcopy">Why AI alone can't do what we do</p>
+                        <h3 class="comp-header-title">The Technological Edge</h3>
+                        <p class="comp-subcopy">AI is our accelerator &mdash; but it cannot be our judge</p>
                     </div>
                     <div class="comp-verdict-badge kill">Fatal Flaw</div>
                 </div>
-                <p class="comp-intro">AI is our accelerator, but it cannot be our judge. The emergence of "Synthetic
-                    Users" (AI personas) creates a dangerous <strong>"Hallucination Gap."</strong></p>
+                <p class="comp-intro">The emergence of &ldquo;Synthetic Users&rdquo; (AI personas) creates a dangerous
+                    <strong>&ldquo;Hallucination Gap.&rdquo;</strong> AI systems are people-pleasers that always
+                    validate &mdash; real humans push back, rage-quit, and lie.
+                </p>
                 <div class="flaw-list">
                     <div class="flaw-item reveal">
-                        <div class="flaw-icon">🧠</div>
+                        <div class="flaw-icon">
+                            <!-- person outline — "AI lacks human lived reality" -->
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="6" r="4" />
+                                <path d="M3 20 C3 14.5 6.5 12 11 12 C15.5 12 19 14.5 19 20" />
+                            </svg>
+                        </div>
                         <div class="flaw-body">
                             <h4>The "Lived Experience" Gap</h4>
                             <p>AI lacks the messy reality of being human. A synthetic persona will never rage-click
@@ -217,19 +315,36 @@
                         </div>
                     </div>
                     <div class="flaw-item reveal">
-                        <div class="flaw-icon">🤖</div>
+                        <div class="flaw-icon">
+                            <!-- thumbs-up — "AI always agrees / people-pleaser" -->
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M8 20 L8 11 L11 4 Q12.5 2 14 3 L14 8 L18 8 Q19.5 8 19.5 9.5 L18.5 18 Q18 20 16.5 20 Z" />
+                                <path d="M8 11 L5 11 Q3.5 11 3.5 12.5 L3.5 18.5 Q3.5 20 5 20 L8 20" />
+                            </svg>
+                        </div>
                         <div class="flaw-body">
                             <h4>The Sycophancy Problem</h4>
                             <p>AI-generated users are inherently "people-pleasers." They tend to praise every idea
                                 because they are programmed to be helpful, leading to false positives and the
-                                <strong>"Hallucinated Customer" trap.</strong></p>
+                                <strong>"Hallucinated Customer" trap.</strong>
+                            </p>
                             <button class="source-btn"
                                 data-source="Interaction Design Foundation · 'Are AI-Generated Synthetic Users Replacing Personas?' · 2026">ⓘ
                                 Source</button>
                         </div>
                     </div>
                     <div class="flaw-item reveal">
-                        <div class="flaw-icon">📉</div>
+                        <div class="flaw-icon">
+                            <!-- question mark — "AI fails with unknown unknowns" -->
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="9" />
+                                <path d="M8 8.5 Q8 5.5 11 5.5 Q14 5.5 14 8.5 Q14 10.5 11 11.5 L11 13" />
+                                <circle cx="11" cy="16" r="0.8" fill="currentColor" stroke="none" />
+                            </svg>
+                        </div>
                         <div class="flaw-body">
                             <h4>The Unprecedented Failure</h4>
                             <p>AI works by interpolating historical data. It fails catastrophically when predicting
@@ -241,7 +356,15 @@
                         </div>
                     </div>
                     <div class="flaw-item reveal">
-                        <div class="flaw-icon">⚖️</div>
+                        <div class="flaw-icon">
+                            <!-- alert triangle — "cannot outsource accountability" -->
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 2 L20 19 L2 19 Z" />
+                                <line x1="11" y1="9" x2="11" y2="13" />
+                                <circle cx="11" cy="16.5" r="0.8" fill="currentColor" stroke="none" />
+                            </svg>
+                        </div>
                         <div class="flaw-body">
                             <h4>Accountability & Liability</h4>
                             <p>You cannot outsource responsibility to an algorithm. Under the India DPDP Act 2026, firms
@@ -257,17 +380,16 @@
 
             <!-- Tab: UserTesting -->
             <div class="comp-panel" id="tab-usertesting">
-                <div class="comp-header">
+                <div class="comp-panel-bar">
                     <div>
-                        <h3>UserTesting.com (2026)</h3>
-                        <p class="comp-subcopy">Industry leader in Experience Research — but a Recording Platform, not a
-                            Strategic Judge</p>
+                        <h3 class="comp-header-title">UserTesting.com (2026)</h3>
+                        <p class="comp-subcopy">Records what users click &mdash; not why they won&rsquo;t pay</p>
                     </div>
                     <div class="comp-verdict-badge pivot">Recording Platform</div>
                 </div>
                 <p class="comp-intro">UserTesting.com captures <em>what</em> users did and <em>where</em> they clicked.
-                    It cannot tell you <strong>why they won't pay</strong> — and that is the only question that matters.
-                </p>
+                    It cannot tell you <strong>why they won&rsquo;t pay</strong> &mdash; and that is the only question
+                    that matters before you build.</p>
                 <div class="comp-breakdown-grid">
                     <div class="breakdown-item reveal">
                         <div class="breakdown-label">Output Type</div>
@@ -309,19 +431,29 @@
 
             <!-- Tab: PreLaunch -->
             <div class="comp-panel" id="tab-prelaunch">
-                <div class="comp-header">
+                <div class="comp-panel-bar">
                     <div>
-                        <h3>PreLaunch.com</h3>
-                        <p class="comp-subcopy">Validates "interest" — but interest is not demand</p>
+                        <h3 class="comp-header-title">PreLaunch.com</h3>
+                        <p class="comp-subcopy">Measures curiosity &mdash; not willingness to pay</p>
                     </div>
                     <div class="comp-verdict-badge pivot">Superficial Interest</div>
                 </div>
-                <p class="comp-intro">PreLaunch.com is built on waitlists and email signups. This measures
-                    <strong>curiosity</strong>, not <strong>willingness to pay</strong>. A founder with 10,000 waitlist
-                    signups can still have zero customers.</p>
+                <p class="comp-intro">PreLaunch.com is built on waitlists and email signups. A founder with
+                    <strong>10,000 waitlist signups</strong> can still have zero customers &mdash; because
+                    <em>curiosity</em> &ne; <em>demand</em>.
+                </p>
                 <div class="flaw-list">
                     <div class="flaw-item reveal">
-                        <div class="flaw-icon">📧</div>
+                        <div class="flaw-icon">
+                            <!-- coin with slash — "email costs nothing = zero financial signal" -->
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="9" />
+                                <line x1="4" y1="4" x2="18" y2="18" />
+                                <path d="M9 8 Q9 6 11 6 Q13 6 13 8" />
+                                <path d="M9 14 Q9 16 11 16 Q13 16 13 14" />
+                            </svg>
+                        </div>
                         <div class="flaw-body">
                             <h4>No Financial Commitment</h4>
                             <p>An email address costs nothing. Signing up for a waitlist requires zero sacrifice —
@@ -329,7 +461,15 @@
                         </div>
                     </div>
                     <div class="flaw-item reveal">
-                        <div class="flaw-icon">🪞</div>
+                        <div class="flaw-icon">
+                            <!-- eye with "≠" — interest ≠ pain intensity -->
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 11 Q11 3 20 11 Q11 19 2 11" />
+                                <circle cx="11" cy="11" r="3.5" />
+                                <line x1="17" y1="6" x2="20" y2="3" />
+                            </svg>
+                        </div>
                         <div class="flaw-body">
                             <h4>Validates "Interest," Not "Pain Intensity"</h4>
                             <p>A person can be interested in a solution without having a painful enough problem to pay
@@ -337,7 +477,16 @@
                         </div>
                     </div>
                     <div class="flaw-item reveal">
-                        <div class="flaw-icon">🛑</div>
+                        <div class="flaw-icon">
+                            <!-- speech bubble with X — no interview/mom test -->
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M4 3 Q2 3 2 5 L2 14 Q2 16 4 16 L9 16 L11 19 L13 16 L18 16 Q20 16 20 14 L20 5 Q20 3 18 3 Z" />
+                                <line x1="8" y1="8" x2="14" y2="13" />
+                                <line x1="14" y1="8" x2="8" y2="13" />
+                            </svg>
+                        </div>
                         <div class="flaw-body">
                             <h4>No "Mom Test" Deep-Dive</h4>
                             <p>Without structured behavioral interviews, founders cannot discover the user's current
@@ -349,51 +498,152 @@
 
             <!-- Tab: How We Stand Out -->
             <div class="comp-panel" id="tab-verdict">
-                <div class="comp-header">
+                <div class="comp-panel-bar">
                     <div>
-                        <h3>PFSV: The Verdict Engine</h3>
-                        <p class="comp-subcopy">How we correct every failure mode — and why we are categorically
-                            different</p>
+                        <h3 class="comp-header-title">PFSV: The Verdict Engine</h3>
+                        <p class="comp-subcopy">We correct every failure mode &mdash; human depth, behavioral proof,
+                            mandatory financial commitment</p>
                     </div>
                     <div class="comp-verdict-badge go">Strategic Judge</div>
                 </div>
-                <p class="comp-intro">We are not a recording platform, a waitlist tool, or an AI chatbot. We are a
-                    <strong>Strategic Judge</strong> — the only solution that combines human depth, behavioral evidence,
-                    and mandatory financial commitment.</p>
+                <p class="comp-intro">Every company struggles to find its moat. We help you find yours&mdash;not as a
+                    consultancy, but as a data-driven engine. We use <strong>real market data</strong> to identify what
+                    works in the current market, ensuring your competitive advantage is rooted in reality.
+                </p>
 
                 <div class="standout-grid">
+
                     <div class="standout-card reveal">
-                        <div class="standout-dim">Output Type</div>
-                        <div class="standout-val">Definitive <span class="badge-go-inline">GO</span> / <span
-                                class="badge-pivot-inline">PIVOT</span> / <span class="badge-kill-inline">KILL</span>
-                            strategic verdict with accountability</div>
+                        <div class="standout-card-top">
+                            <span class="standout-num">01</span>
+                            <div class="standout-icon">
+                                <!-- verdict gavel — definitive decisions -->
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 19 L8 14" />
+                                    <rect x="7" y="5" width="10" height="6" rx="1.5" transform="rotate(-45 12 8)" />
+                                    <line x1="2" y1="20" x2="8" y2="20" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="standout-label">Output Type</div>
+                        <div class="standout-title">Definitive Verdicts</div>
+                        <div class="standout-val"><span class="badge-go-inline">GO</span> / <span
+                                class="badge-pivot-inline">PIVOT</span> / <span class="badge-kill-inline">KILL</span> —
+                            not a PDF of opinions. A legally-backed decision you can act on tomorrow.</div>
                     </div>
+
                     <div class="standout-card reveal">
-                        <div class="standout-dim">Data Depth</div>
-                        <div class="standout-val"><strong>Prescriptive</strong> — tells you <em>why they won't pay</em>
-                            and exactly <em>how to pivot</em></div>
+                        <div class="standout-card-top">
+                            <span class="standout-num">02</span>
+                            <div class="standout-icon">
+                                <!-- prescriptive chart with arrow up -->
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="3,16 8,10 13,13 19,5" />
+                                    <polyline points="16,5 19,5 19,8" />
+                                    <line x1="2" y1="20" x2="20" y2="20" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="standout-label">Data Engine</div>
+                        <div class="standout-title">The Real Data Moat</div>
+                        <div class="standout-val">We use <em>real-world behavioral signals</em> to find your correct
+                            moat.
+                            Not a consultant's report—but raw proof of what the current market actually pays for.</div>
                     </div>
+
                     <div class="standout-card reveal">
-                        <div class="standout-dim">Focus Area</div>
-                        <div class="standout-val"><strong>Business Viability</strong> — "Should this startup exist at
-                            all?"</div>
+                        <div class="standout-card-top">
+                            <span class="standout-num">03</span>
+                            <div class="standout-icon">
+                                <!-- crosshair — business viability focus -->
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="9" />
+                                    <circle cx="11" cy="11" r="3.5" />
+                                    <line x1="11" y1="1" x2="11" y2="5" />
+                                    <line x1="11" y1="17" x2="11" y2="21" />
+                                    <line x1="1" y1="11" x2="5" y2="11" />
+                                    <line x1="17" y1="11" x2="21" y2="11" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="standout-label">Focus Area</div>
+                        <div class="standout-title">Business Viability</div>
+                        <div class="standout-val">We answer the only question that matters before you build: <em>"Should
+                                this startup exist at all?"</em> Not UI. Not aesthetics.</div>
                     </div>
+
                     <div class="standout-card reveal">
-                        <div class="standout-dim">Commitment</div>
-                        <div class="standout-val">Forces real <strong>"Money Signals"</strong> — paid pre-orders or
-                            signed LOIs. Willingness to pay is mandatory.</div>
+                        <div class="standout-card-top">
+                            <span class="standout-num">04</span>
+                            <div class="standout-icon">
+                                <!-- coin stack — money signal commitment -->
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="11" cy="7" rx="8" ry="3" />
+                                    <path d="M3 7 C3 7 3 12 11 12 C19 12 19 7 19 7" />
+                                    <path d="M3 12 C3 12 3 17 11 17 C19 17 19 12 19 12" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="standout-label">Commitment Signal</div>
+                        <div class="standout-title">Mandatory Money Signal</div>
+                        <div class="standout-val">Paid pre-orders, signed LOIs, or RBI-compliant escrow. We require
+                            <strong>real financial skin in the game</strong> — not just opinions.
+                        </div>
                     </div>
+
                     <div class="standout-card reveal">
-                        <div class="standout-dim">AI Role</div>
-                        <div class="standout-val"><strong>AI accelerates</strong> research. <strong>Humans
-                                deliver</strong> the verdict. No hallucinated customers.</div>
+                        <div class="standout-card-top">
+                            <span class="standout-num">05</span>
+                            <div class="standout-icon">
+                                <!-- AI + human hybrid — GPU chip with person -->
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="8" cy="6" r="3" />
+                                    <path d="M2 19 C2 14.5 5 12.5 8 12.5" />
+                                    <rect x="13" y="10" width="7" height="7" rx="1" />
+                                    <line x1="15" y1="10" x2="15" y2="8" />
+                                    <line x1="18" y1="10" x2="18" y2="8" />
+                                    <line x1="13" y1="13" x2="11" y2="13" />
+                                    <line x1="13" y1="15" x2="11" y2="15" />
+                                    <line x1="20" y1="13" x2="22" y2="13" />
+                                    <line x1="20" y1="15" x2="22" y2="15" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="standout-label">AI Role</div>
+                        <div class="standout-title">AI Accelerates. Humans Judge.</div>
+                        <div class="standout-val"><strong>AI speeds up</strong> research synthesis. A qualified
+                            <strong>human strategist</strong> delivers the final verdict. No hallucinated customers.
+                        </div>
                     </div>
+
                     <div class="standout-card reveal">
-                        <div class="standout-dim">Accountability</div>
-                        <div class="standout-val">₹1 Crore Professional Indemnity coverage. We stand behind every
-                            verdict legally.</div>
+                        <div class="standout-card-top">
+                            <span class="standout-num">06</span>
+                            <div class="standout-icon">
+                                <!-- shield with rupee — legal indemnity -->
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M11 2 L19 5.5 L19 11 C19 15.5 15.5 19.5 11 20.5 C6.5 19.5 3 15.5 3 11 L3 5.5 Z" />
+                                    <line x1="8" y1="9" x2="14" y2="9" />
+                                    <line x1="8" y1="12" x2="14" y2="12" />
+                                    <path d="M10 9 Q10 7 11 7 Q12 7 12 9 L10 12 L13 16" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="standout-label">Accountability</div>
+                        <div class="standout-title">₹1 Crore Legal Coverage</div>
+                        <div class="standout-val">Professional Indemnity Insurance (E&amp;O). We stand behind every KILL
+                            verdict with full legal accountability. No algorithm can do this.</div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -403,80 +653,142 @@
      ============================================================ -->
     <section id="sprint" class="section dark-base">
         <div class="container">
-            <div class="section-eyebrow">Section 4 · Operational Model</div>
-            <h2 class="section-title">The 30-Day Validation Sprint</h2>
-            <p class="section-subtitle">We provide <strong>Confidence-as-a-Service.</strong> Input: An Idea. Output: A
-                definitive GO / PIVOT / KILL decision backed by behavioral proof.</p>
+            <div class="section-eyebrow reveal">Section 4 &middot; Operational Model</div>
+            <h2 class="section-title reveal">The 30-Day Scientific Disproof Sprint</h2>
+            <p class="section-subtitle reveal">We don&rsquo;t validate ideas &mdash; we <strong>try to kill
+                    them.</strong> If your idea survives 30 days of structured disproof, you have a bankable signal.</p>
 
             <div class="sprint-timeline">
-                <div class="sprint-step reveal" id="sprint1">
-                    <div class="sprint-top">
-                        <span class="sprint-num">Phase 1</span>
-                        <span class="sprint-badge">Problem Stress-Testing</span>
+
+                <!-- PHASE 01 -->
+                <div class="sprint-card reveal" id="sprint1">
+                    <div class="sprint-card-meta">
+                        <span class="sprint-week-tag">Week 1 &middot; Days 1&ndash;7</span>
+                        <a class="sprint-source-link"
+                            data-source="CB Insights: 42% of startups fail because there's no market need. Aticus Peterson, Strategic Decision-Making Research (2024)."
+                            href="#">Check Source ↗</a>
                     </div>
-                    <h3>Mom Test Interviews</h3>
-                    <p><strong>Framework:</strong> 15–20 structured "Mom Test" interviews focusing on past behavior and
-                        current hacks — never hypothetical future intent.</p>
-                    <div class="sprint-metric">
-                        <strong>Metric:</strong> Problem Stack Ranking. We ask users to rank their daily struggles. If
-                        your product doesn't crack the Top 3, we immediately flag a "PIVOT."
+                    <div class="sprint-phase-label">01. THE PAIN AUDIT</div>
+                    <p class="sprint-brutal-line">Kill the delusion. If it&rsquo;s not a Top&nbsp;3 priority, we Pivot
+                        on Day&nbsp;7.</p>
+                    <div class="sprint-details">
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">The Action</span>
+                            <span class="sprint-dv">15&ndash;20 structured &ldquo;Mom Test&rdquo; interviews. Past
+                                behavior only &mdash; never hypothetical intent.</span>
+                        </div>
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">The Metric</span>
+                            <span class="sprint-dv">Problem Stack Ranking. We force users to rank their daily struggles
+                                in order of urgency.</span>
+                        </div>
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">The Guard</span>
+                            <span class="sprint-dv">Founders overestimate their idea&rsquo;s value by
+                                <strong>255%</strong>. This phase kills that delusion early.</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="sprint-connector">↓</div>
+                <div class="sprint-connector">&#8595;</div>
 
-                <div class="sprint-step reveal" id="sprint2">
-                    <div class="sprint-top">
-                        <span class="sprint-num">Phase 2</span>
-                        <span class="sprint-badge">Behavioral Demand</span>
+                <!-- PHASE 02 -->
+                <div class="sprint-card reveal" id="sprint2">
+                    <div class="sprint-card-meta">
+                        <span class="sprint-week-tag">Week 2 &middot; Days 8&ndash;14</span>
+                        <a class="sprint-source-link"
+                            data-source="PFSV Internal Operational Model: payment-gate drop-off as primary behavioral demand signal. Pre-PMF Agency Benchmarks 2026."
+                            href="#">Check Source ↗</a>
                     </div>
-                    <h3>Smoke Test Experiments</h3>
-                    <p><strong>Action:</strong> Build a high-fidelity "Fake Door" landing page or WhatsApp funnel. No
-                        code required.</p>
-                    <div class="sprint-metric">
-                        <strong>Data Tracking:</strong> We measure Activation Rate and drop-off points at the pricing
-                        page — where intent meets reality.
+                    <div class="sprint-phase-label">02. BEHAVIORAL TRAP</div>
+                    <p class="sprint-brutal-line">Stop listening. We track the moment they refuse to pay.</p>
+                    <div class="sprint-details">
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">The Action</span>
+                            <span class="sprint-dv">Build a high-fidelity &ldquo;Fake Door&rdquo; landing page or
+                                WhatsApp funnel. Zero code required.</span>
+                        </div>
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">The Tracking</span>
+                            <span class="sprint-dv">Activation Rate &amp; drop-off at the pricing gate &mdash; where
+                                intent collides with reality.</span>
+                        </div>
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">The Edge</span>
+                            <span class="sprint-dv">We measure what people <em>have done</em>, not what they <em>might
+                                    do</em>. That gap is where startups die.</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="sprint-connector">↓</div>
+                <div class="sprint-connector">&#8595;</div>
 
-                <div class="sprint-step reveal sprint-mandatory" id="sprint3">
-                    <div class="sprint-top">
-                        <span class="sprint-num">Phase 3</span>
-                        <span class="sprint-badge mandatory-tag">MANDATORY</span>
+                <!-- PHASE 03 — MANDATORY -->
+                <div class="sprint-card reveal" id="sprint3">
+                    <div class="sprint-card-meta">
+                        <span class="sprint-week-tag">Week 3 &middot; Days 15&ndash;24</span>
+                        <a class="sprint-source-link"
+                            data-source="RBI Compliance &amp; Digital Escrow Standards 2026. India DPDP Act 2026 Compliance. RazorpayX &amp; Castler escrow framework."
+                            href="#">Check Source ↗</a>
                     </div>
-                    <h3>The Money Signal</h3>
-                    <p>We do not believe in validation without financial commitment. This phase is non-negotiable. At
-                        least one of the following must occur:</p>
-                    <ul class="sprint-list">
-                        <li>Paid pre-order via <strong>RBI-compliant digital escrow</strong> (RazorpayX or Castler)</li>
-                        <li>Paid pilot engagement</li>
-                        <li>Signed B2B Letter of Intent (LOI)</li>
-                    </ul>
+                    <div class="sprint-phase-label">03. THE MONEY SIGNAL <span
+                            class="sprint-mandatory-chip">MANDATORY</span></div>
+                    <p class="sprint-brutal-line">Non-negotiable. Real money in Escrow or the sprint ends here.</p>
+                    <div class="sprint-details">
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">The Rule</span>
+                            <span class="sprint-dv">No validation exists without financial commitment. Full stop.</span>
+                        </div>
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">Paid Pre-order</span>
+                            <span class="sprint-dv">Funds held via <strong>RBI-compliant digital escrow</strong>
+                                (RazorpayX or Castler). Zero transaction risk.</span>
+                        </div>
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">Paid Pilot</span>
+                            <span class="sprint-dv">Signed B2B Letter of Intent (LOI) or engagement at agreed scope
+                                &amp; fee.</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="sprint-connector">↓</div>
+                <div class="sprint-connector">&#8595;</div>
 
-                <div class="sprint-step reveal" id="sprint4">
-                    <div class="sprint-top">
-                        <span class="sprint-num">Phase 4</span>
-                        <span class="sprint-badge">Risk Mapping & Founder Fit</span>
+                <!-- PHASE 04 -->
+                <div class="sprint-card reveal" id="sprint4">
+                    <div class="sprint-card-meta">
+                        <span class="sprint-week-tag">Week 4 &middot; Days 25&ndash;30</span>
+                        <a class="sprint-source-link"
+                            data-source="India Startup Risk Index Standards. India Pre-PMF Agency Benchmarks — validation score as Series A readiness indicator."
+                            href="#">Check Source ↗</a>
                     </div>
-                    <h3>The Verdict</h3>
-                    <p><strong>Analysis:</strong> We assess switching costs, market saturation, and founder-market fit.
-                    </p>
-                    <p style="margin-top:0.75rem"><strong>Output:</strong> A <strong>0–100 Validation Score</strong> and
-                        an investor-ready <strong>"Bankable Validation Pack."</strong></p>
+                    <div class="sprint-phase-label">04. THE VERDICT</div>
+                    <p class="sprint-brutal-line">The Bankable Pack. A definitive KILL or BUILD verdict for your
+                        investors.</p>
+                    <div class="sprint-details">
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">The Analysis</span>
+                            <span class="sprint-dv">Deep assessment of switching costs, market saturation, and
+                                Founder&ndash;Market Fit.</span>
+                        </div>
+                        <div class="sprint-detail-row">
+                            <span class="sprint-dl">The Output</span>
+                            <span class="sprint-dv">A <strong>0&ndash;100 Validation Score</strong> and an
+                                investor-ready &ldquo;Bankable Validation Pack.&rdquo;</span>
+                        </div>
+                    </div>
                     <div class="verdict-row">
-                        <span class="verdict-badge badge-go">✓ GO</span>
-                        <span class="verdict-badge badge-pivot">⚠ PIVOT</span>
-                        <span class="verdict-badge badge-kill">✕ KILL</span>
+                        <span class="verdict-badge badge-go">&#10003; GO</span>
+                        <span class="verdict-badge badge-pivot">&#9651; PIVOT</span>
+                        <span class="verdict-badge badge-kill">&#10005; KILL</span>
                     </div>
                 </div>
-            </div>
+
+            </div><!-- /sprint-timeline -->
         </div>
     </section>
+
+
 
     <!-- ============================================================
      SECTION 5 · DELIVERABLES MASTER LIST
@@ -491,23 +803,39 @@
             <div class="accordion" id="deliverableAccordion">
                 <div class="accord-item reveal">
                     <button class="accord-header" id="acc1">
-                        <span class="accord-icon">📋</span>
+                        <span class="accord-icon">
+                            <!-- search/magnify — strategic research -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="8.5" cy="8.5" r="6" />
+                                <line x1="13" y1="13" x2="18" y2="18" />
+                            </svg>
+                        </span>
                         <span class="accord-title">Strategic Research</span>
                         <span class="accord-arrow">↓</span>
                     </button>
                     <div class="accord-body" id="body-acc1">
                         <ul>
                             <li>Industry gap analysis</li>
-                            <li>Competitor "white space" audit</li>
+                            <li><strong>Moat Mapping:</strong> Finding your defensible "white space"</li>
                             <li>Bottom-up market sizing (TAM / SAM / SOM)</li>
-                            <li>Problem Strength Score (0–100)</li>
+                            <li>Current market trend verification (Real Data)</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="accord-item reveal">
                     <button class="accord-header" id="acc2">
-                        <span class="accord-icon">🎙️</span>
+                        <span class="accord-icon">
+                            <!-- users/people — human interviews -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="8" cy="6" r="3.5" />
+                                <path d="M1 18 C1 13 4 11 8 11 C12 11 15 13 15 18" />
+                                <circle cx="15" cy="5" r="2.5" />
+                                <path d="M15 10 C18 10 19.5 12 19.5 15" />
+                            </svg>
+                        </span>
                         <span class="accord-title">Human Signals</span>
                         <span class="accord-arrow">↓</span>
                     </button>
@@ -523,7 +851,13 @@
 
                 <div class="accord-item reveal">
                     <button class="accord-header" id="acc3">
-                        <span class="accord-icon">💻</span>
+                        <span class="accord-icon">
+                            <!-- cursor/pointer — digital tracking & fake door -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 2 L4 16 L8 12 L11 18 L13 17 L10 11 L16 11 Z" />
+                            </svg>
+                        </span>
                         <span class="accord-title">Digital Evidence</span>
                         <span class="accord-arrow">↓</span>
                     </button>
@@ -540,7 +874,15 @@
 
                 <div class="accord-item reveal">
                     <button class="accord-header" id="acc4">
-                        <span class="accord-icon">💰</span>
+                        <span class="accord-icon">
+                            <!-- trending-up with ₹ line — financial willingness-to-pay -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="2,14 7,8 12,11 18,4" />
+                                <polyline points="13,4 18,4 18,9" />
+                                <line x1="2" y1="18" x2="18" y2="18" />
+                            </svg>
+                        </span>
                         <span class="accord-title">Financial Proof</span>
                         <span class="accord-arrow">↓</span>
                     </button>
@@ -556,7 +898,14 @@
 
                 <div class="accord-item reveal">
                     <button class="accord-header" id="acc5">
-                        <span class="accord-icon">⚖️</span>
+                        <span class="accord-icon">
+                            <!-- verdict checkmark — advisory & strategic decision -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10 2 L17 5 L17 10 C17 14 13.5 17 10 18 C6.5 17 3 14 3 10 L3 5 Z" />
+                                <polyline points="7,10 9.5,12.5 14,7.5" />
+                            </svg>
+                        </span>
                         <span class="accord-title">Advisory Verdicts</span>
                         <span class="accord-arrow">↓</span>
                     </button>
@@ -593,10 +942,10 @@
                         <li>Desk research audit</li>
                         <li>Competitive gap report</li>
                         <li>Industry gap analysis</li>
-                        <li>Problem Strength Score (0–100)</li>
-                        <li>1× "Kill or Build" expert call (30 min)</li>
+                        <li>Market-size audit (TAM/SAM)</li>
+                        <li>1× "Kill or Build" expert consult</li>
                     </ul>
-                    <a href="#contact" class="pricing-cta">Start Here</a>
+                    <a href="#pricing" class="pricing-cta">Start Here</a>
                 </div>
 
                 <div class="pricing-card reveal" id="price2">
@@ -611,7 +960,7 @@
                         <li>Report on current user "hacks"</li>
                         <li>Pain Intensity Scoring</li>
                     </ul>
-                    <a href="#contact" class="pricing-cta">Get Started</a>
+                    <a href="#pricing" class="pricing-cta">Get Started</a>
                 </div>
 
                 <div class="pricing-card featured reveal" id="price3">
@@ -623,18 +972,27 @@
                     <ul class="pricing-features">
                         <li>Everything in Truth Hunt</li>
                         <li>"Fake Door" landing page</li>
-                        <li>7-day targeted ad sprint (₹5k ads included)</li>
+                        <li>7-day Targeted Ad Sprint</li>
                         <li>Verified Intent Action report</li>
                         <li>Clicks-to-buy vs. signups analysis</li>
                         <li>GO / PIVOT / KILL verdict</li>
                     </ul>
-                    <a href="#contact" class="pricing-cta primary">Get Started</a>
+                    <a href="#pricing" class="pricing-cta primary">Get Started</a>
                 </div>
             </div>
 
-            <div class="pricing-note reveal">
-                <strong>Why this works:</strong> It moves focus away from "investors" and back onto
-                <strong>Revenue</strong>. Founders will pay ₹49k if it helps them find their first 10 customers.
+            <div class="pricing-ai-callout reveal">
+                <div class="pai-eyebrow">The Moat Engine</div>
+                <p class="pai-headline">Building is now a commodity.<br>Finding the <strong>correct moat</strong> is
+                    the only sustainable path.</p>
+                <div class="pai-divider"></div>
+                <p class="pai-body">AI can write your code in minutes, but it can't find your moat. We are not a
+                    consultancy—we are an engine that leverages <strong>real market data</strong> to identify what
+                    actually works in the current market. We help you find the deficit that people are desperate to pay
+                    for.</p>
+                <div class="pai-stat">We help you find the <strong>Truth Moat</strong>: the point where market demand
+                    meets your unique ability to execute.
+                </div>
             </div>
         </div>
     </section>
@@ -785,7 +1143,14 @@
 
             <div class="legal-grid">
                 <div class="legal-card reveal">
-                    <div class="legal-icon">🛡️</div>
+                    <div class="legal-icon">
+                        <!-- shield with checkmark — indemnity / coverage -->
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 3 L27 7.5 L27 16 C27 22.5 21.5 28 16 29 C10.5 28 5 22.5 5 16 L5 7.5 Z" />
+                            <polyline points="10,16 14,20 22,12" />
+                        </svg>
+                    </div>
                     <h3>Professional Indemnity Insurance</h3>
                     <p>We carry Errors & Omissions (E&O) insurance to protect against service mistakes — with <strong>₹1
                             Crore cover</strong> starting as low as <strong>₹1,770/year</strong>. We stand behind every
@@ -795,7 +1160,16 @@
                         Source</button>
                 </div>
                 <div class="legal-card reveal">
-                    <div class="legal-icon">🔒</div>
+                    <div class="legal-icon">
+                        <!-- padlock — escrow / funds secured -->
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="7" y="15" width="18" height="14" rx="3" />
+                            <path d="M10 15 L10 10 Q10 4 16 4 Q22 4 22 10 L22 15" />
+                            <circle cx="16" cy="22" r="2" fill="currentColor" stroke="none" />
+                            <line x1="16" y1="24" x2="16" y2="26" />
+                        </svg>
+                    </div>
                     <h3>RBI-Compliant Digital Escrow</h3>
                     <p>We utilize <strong>RazorpayX</strong> or <strong>Castler</strong> to hold pre-order funds —
                         providing the ultimate proof of "Willingness to Pay" without taking on transaction risk
@@ -805,7 +1179,17 @@
                         Source</button>
                 </div>
                 <div class="legal-card reveal">
-                    <div class="legal-icon">⚖️</div>
+                    <div class="legal-icon">
+                        <!-- open book — legislation / DPDP Act -->
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 7 C16 7 12 4 5 5 L5 26 C12 25 16 28 16 28" />
+                            <path d="M16 7 C16 7 20 4 27 5 L27 26 C20 25 16 28 16 28" />
+                            <line x1="16" y1="7" x2="16" y2="28" />
+                            <line x1="9" y1="11" x2="13" y2="10" />
+                            <line x1="9" y1="15" x2="13" y2="14" />
+                        </svg>
+                    </div>
                     <h3>India DPDP Act 2026</h3>
                     <p>All data collected during validation sprints is handled in full compliance with the <strong>India
                             Digital Personal Data Protection Act 2026.</strong> No client data is shared without
@@ -909,30 +1293,40 @@
     <!-- ============================================================
      FOOTER
      ============================================================ -->
+    <!-- Contact anchor for CTA links -->
+    <div id="contact"></div>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-brand">
                     <h3>The Verdict Engine</h3>
                     <p>Problem-First Startup Validation (PFSV)</p>
-                    <p class="footer-tagline">Built for the Age of AI,<br>Rooted in Human Truth.</p>
                 </div>
+
+                <div class="footer-centerpiece">
+                    <p class="footer-tagline">Engineered for the <span
+                            class="orange-mark">Market</span>,<br><strong>Defining</strong> your <span
+                            class="orange-mark">Moat of Truth.</span></p>
+                </div>
+
                 <div class="footer-nav">
-                    <h4>Sections</h4>
-                    <a href="#crisis">The Crisis</a>
-                    <a href="#philosophy">Our Philosophy</a>
-                    <a href="#competition">Why Giants Fail</a>
-                    <a href="#sprint">The 30-Day Sprint</a>
-                    <a href="#deliverables">Deliverables</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#vision">Vision</a>
-                    <a href="#references">References</a>
+                    <h4>Direct Access</h4>
+                    <div class="nav-grid">
+                        <a href="#crisis">Crisis</a>
+                        <a href="#philosophy">Philosophy</a>
+                        <a href="#competition">Competition</a>
+                        <a href="#sprint">The Sprint</a>
+                        <a href="#deliverables">Verdicts</a>
+                        <a href="#pricing">Revenue</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-legal">
                 <p>Fully compliant with <strong>India DPDP Act 2026</strong> &middot; Professional Indemnity Coverage:
                     <strong>₹1 Crore (E&O)</strong> &middot; RBI-compliant escrow via RazorpayX / Castler &middot; No
-                    investor brokerage</p>
+                    investor brokerage
+                </p>
                 <p class="footer-copy">&copy; 2026 The Verdict Engine · Problem-First Startup Validation. All rights
                     reserved.</p>
             </div>
