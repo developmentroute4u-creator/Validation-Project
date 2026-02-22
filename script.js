@@ -202,6 +202,46 @@ function initStatCounters() {
 }
 
 /* =========================================
+   12. CUSTOM PREMIUM CURSOR (GPU Accelerated)
+   ========================================= */
+function initCursorGlow() {
+    const dot = document.getElementById('cursorDot');
+    const glow = document.getElementById('cursorGlow');
+    if (!dot || !glow) return;
+
+    let mouseX = -100, mouseY = -100;
+    let dotX = -100, dotY = -100;
+    let glowX = -100, glowY = -100;
+
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        dot.classList.add('active');
+        glow.classList.add('active');
+    });
+
+    const animate = () => {
+        // Dot tracking (high precision)
+        dotX += (mouseX - dotX) * 0.3;
+        dotY += (mouseY - dotY) * 0.3;
+        dot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0) translate(-50%, -50%)`;
+
+        // Glow tracking (fluid lag)
+        glowX += (mouseX - glowX) * 0.12;
+        glowY += (mouseY - glowY) * 0.12;
+        glow.style.transform = `translate3d(${glowX}px, ${glowY}px, 0) translate(-50%, -50%)`;
+
+        requestAnimationFrame(animate);
+    };
+    animate();
+
+    document.addEventListener('mouseleave', () => {
+        dot.classList.remove('active');
+        glow.classList.remove('active');
+    });
+}
+
+/* =========================================
    INIT
    ========================================= */
 document.addEventListener('DOMContentLoaded', () => {
@@ -216,5 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollTop();
     initMobileMenu();
     initStatCounters();
-    console.log('✓ Verdict Engine v3');
+    initCursorGlow();
+    console.log('✓ Verdict Engine v3.1 | Premium Cursor Active');
 });
