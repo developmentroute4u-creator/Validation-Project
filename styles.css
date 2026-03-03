@@ -2021,6 +2021,19 @@ img {
     display: flex;
     flex-direction: column;
     gap: .85rem;
+    margin-bottom: 2rem;
+}
+
+.ref-group-title {
+    font-family: var(--font-d);
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--orange);
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--orange-dim);
+    padding-bottom: 0.5rem;
 }
 
 .ref-ol li {
