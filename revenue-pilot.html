@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Revenue Pilot | Beforebuild.ai</title>
+    <meta name="description"
+        content="Full demand simulation with fake door landing pages and ad sprints to get real 'Yes' signals.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="audit-page">
+
+    <!-- Premium Background Effects -->
+    <div class="audit-hero-bg"></div>
+
+    <!-- Nav (Premium Synchronized) -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">BEFOREBUILD.AI</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#crisis" class="nav-link">Crisis</a></li>
+                <li><a href="index.html#philosophy" class="nav-link">Truth</a></li>
+                <li><a href="index.html#competition" class="nav-link">Giants</a></li>
+                <li><a href="index.html#sprint" class="nav-link">The Sprint</a></li>
+                <li><a href="index.html#deliverables" class="nav-link">Outcome</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="index.html#vision" class="nav-link">Vision</a></li>
+            </ul>
+            <a href="index.html#pricing" class="nav-cta">Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Glass Orb Background -->
+    <div class="glass-orb-wrap" aria-hidden="true">
+        <div class="glass-orb" id="orb"></div>
+    </div>
+
+    <!-- Tier Page Split Layout -->
+    <main class="tier-wrapper reveal">
+        <!-- Left Side: Product Detail -->
+        <div class="tier-detail-side">
+            <div class="pricing-badge"
+                style="display: inline-block; position: static; transform: none; background: var(--go); color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 10px; font-weight: 850; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1.5rem;">
+                Most Chosen</div>
+            <div class="tier-eyebrow">Tier 03 · Demand Simulation</div>
+            <h1 class="tier-title">The Revenue Pilot</h1>
+            <div class="tier-price-tag">
+                ₹49,999
+                <span class="tier-price-label">Full Demand Simulation</span>
+            </div>
+            <p class="tier-description">Our flagship protocol for high-conviction decision making. We don't ask users
+                what they want—we create high-fidelity "Fake Door" experiments and targeted ad sprints to measure what
+                they actually do with their credit cards.</p>
+
+            <div class="protocol-list">
+                <div class="protocol-item" style="border-left-color: var(--go);">
+                    <h4>Fake Door Landers</h4>
+                    <p>Development of a high-conversion landing page designed to capture real intent and
+                        willingness-to-pay signals.</p>
+                </div>
+                <div class="protocol-item" style="border-left-color: var(--go);">
+                    <h4>Targeted Ad Sprints</h4>
+                    <p>A 7-day concentrated ad campaign to drive high-intent traffic and measure actual conversion
+                        behavior in the wild.</p>
+                </div>
+                <div class="protocol-item" style="border-left-color: var(--go);">
+                    <h4>Verified Intent Action Report</h4>
+                    <p>Hard metrics on click-through rates, signup velocities, and Clicks-to-Buy vs. passive signups.
+                    </p>
+                </div>
+                <div class="protocol-item" style="border-left-color: var(--go);">
+                    <h4>Bankable Verdict Document</h4>
+                    <p>A comprehensive GO / PIVOT / KILL verdict document backed by economic reality, designed for your
+                        investor deck.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Action Card -->
+        <div class="tier-purchase-card" style="border-top: 6px solid var(--go);">
+            <header class="audit-header" style="text-align: left; margin-bottom: 2.5rem;">
+                <h2 style="font-family: var(--font-d); font-size: 1.75rem; font-weight: 850; margin-bottom: 0.5rem;">
+                    Launch the Pilot</h2>
+                <p style="font-size: 0.9rem; color: var(--text-2);">Deploy the ultimate validation experiment.</p>
+            </header>
+
+            <form id="tierForm" class="form-grid">
+                <div class="form-group">
+                    <label class="form-label" for="vision">Your Market Vision</label>
+                    <textarea class="form-control" id="vision" name="vision" required
+                        placeholder="Describe the market sector and target demographic for simulation."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Work Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required
+                        placeholder="email@company.com">
+                </div>
+
+                <div class="form-submit-wrap">
+                    <button type="submit" class="btn-audit-submit" style="background: var(--go);">Initiate Revenue Pilot
+                        &rarr;</button>
+                </div>
+
+                <p class="audit-footer-note" style="text-align: left;">
+                    Total: <strong>₹49,999</strong>. Escrow-compliant transaction layer. Results delivered in 30 days.
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('tierForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            btn.textContent = 'Authenticating Payload...';
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Secure Payload Received. Redirecting to Escrow Gateway. (Simulation)');
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>

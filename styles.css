@@ -2389,3 +2389,314 @@ img {
         opacity: 1;
     }
 }
+
+/* =========================================
+   AUDIT FORM PREMIUM STYLES
+   ========================================= */
+.audit-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10rem 2rem 6rem;
+    position: relative;
+    z-index: 10;
+}
+
+.audit-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    border: 1px solid var(--border-s);
+    border-radius: var(--rm);
+    padding: 3.5rem;
+    box-shadow: var(--s-hover);
+}
+
+.audit-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.audit-header h1 {
+    font-family: var(--font-d);
+    font-size: 2.75rem;
+    font-weight: 950;
+    line-height: 1.1;
+    letter-spacing: -.03em;
+    margin-bottom: 1rem;
+}
+
+.audit-header p {
+    color: var(--text-2);
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-2);
+    margin-bottom: 0.25rem;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--border-s);
+    border-radius: var(--r);
+    padding: 1.1rem 1.4rem;
+    font-family: var(--font-b);
+    font-size: 0.92rem;
+    color: var(--text-1);
+    transition: var(--t);
+    line-height: 1.5;
+}
+
+.form-control::placeholder {
+    color: var(--text-3);
+    opacity: 0.45;
+    font-weight: 400;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--orange);
+    background: #fff;
+    box-shadow: 0 0 0 4px var(--orange-dim);
+}
+
+textarea.form-control {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-submit-wrap {
+    margin-top: 1.5rem;
+}
+
+.btn-audit-submit {
+    width: 100%;
+    padding: 1.25rem;
+    background: var(--text-1);
+    color: #fff;
+    border: none;
+    border-radius: var(--r);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--t);
+}
+
+.btn-audit-submit:hover {
+    background: var(--orange);
+    transform: translateY(-2px);
+    box-shadow: var(--s-hover);
+}
+
+.audit-footer-note {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 0.75rem;
+    color: var(--text-2);
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   AUDIT PAGE PREMIUM SYNC
+   ========================================= */
+.audit-page {
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+.audit-hero-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.audit-hero-bg::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    background: radial-gradient(circle, var(--orange-dim) 0%, transparent 70%);
+    top: -10%;
+    right: -10%;
+}
+
+.audit-hero-bg::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(230, 62, 0, 0.04) 0%, transparent 60%);
+    bottom: -10%;
+    left: -10%;
+}
+
+@media(max-width: 768px) {
+    .audit-container {
+        padding: 7rem 1.5rem 4rem;
+    }
+
+    .audit-card {
+        padding: 2.5rem 1.8rem;
+    }
+
+    .audit-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* =========================================
+   TIER PAGE REFINEMENT (SPLIT LAYOUT)
+   ========================================= */
+.tier-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    max-width: var(--w);
+    margin: 0 auto;
+    padding: 10rem 2rem 6rem;
+    position: relative;
+    z-index: 10;
+}
+
+.tier-detail-side {
+    position: sticky;
+    top: 8rem;
+}
+
+.tier-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--orange);
+    margin-bottom: 1.5rem;
+}
+
+.tier-title {
+    font-family: var(--font-d);
+    font-size: 3.5rem;
+    font-weight: 950;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    margin-bottom: 1.5rem;
+}
+
+.tier-price-tag {
+    font-family: var(--font-d);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-1);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tier-price-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-3);
+    padding: 0.2rem 0.6rem;
+    background: var(--orange-dim);
+    border-radius: 4px;
+}
+
+.tier-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-2);
+    margin-bottom: 3rem;
+}
+
+.protocol-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.protocol-item {
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid var(--border-s);
+    border-left: 4px solid var(--orange);
+    border-radius: var(--rm);
+    transition: var(--t);
+    position: relative;
+}
+
+.protocol-item:hover {
+    transform: translateX(8px);
+    box-shadow: var(--s-hover);
+}
+
+.protocol-item h4 {
+    font-family: var(--font-d);
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 0.4rem;
+}
+
+.protocol-item p {
+    font-size: 0.88rem;
+    color: var(--text-2);
+    line-height: 1.6;
+}
+
+.tier-purchase-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(24px);
+    border: 1px solid var(--border-s);
+    border-radius: var(--rm);
+    padding: 3rem;
+    box-shadow: var(--s-hover);
+    position: relative;
+}
+
+@media(max-width: 1080px) {
+    .tier-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding-top: 8rem;
+    }
+
+    .tier-detail-side {
+        position: static;
+    }
+}
+
+@media(max-width: 768px) {
+    .tier-title {
+        font-size: 2.5rem;
+    }
+
+    .tier-purchase-card {
+        padding: 2rem;
+    }
+}

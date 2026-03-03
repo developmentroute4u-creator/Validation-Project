@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Your Idea | Beforebuild.ai</title>
+    <meta name="description"
+        content="Submit your startup idea for a scientific disproof audit. Receive a bankable GO / PIVOT / KILL verdict.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="audit-page">
+
+    <!-- Premium Background Effects -->
+    <div class="audit-hero-bg"></div>
+
+    <!-- Nav (Premium Synchronized) -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">BEFOREBUILD.AI</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#crisis" class="nav-link">Crisis</a></li>
+                <li><a href="index.html#philosophy" class="nav-link">Truth</a></li>
+                <li><a href="index.html#competition" class="nav-link">Giants</a></li>
+                <li><a href="index.html#sprint" class="nav-link">The Sprint</a></li>
+                <li><a href="index.html#deliverables" class="nav-link">Outcome</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="index.html#vision" class="nav-link">Vision</a></li>
+            </ul>
+            <a href="index.html#pricing" class="nav-cta">Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Glass Orb Background (Shared Aesthetic) -->
+    <div class="glass-orb-wrap" aria-hidden="true">
+        <div class="glass-orb" id="orb"></div>
+    </div>
+
+    <!-- Audit Section -->
+    <main class="audit-container reveal">
+        <div class="audit-card">
+            <header class="audit-header">
+                <div class="section-eyebrow">Moat Discovery Phase</div>
+                <h1>Audit Your Idea</h1>
+                <p>Submit your concept for a structured disproof audit. We examine assumptions to identify structurally
+                    sound pathways to market.</p>
+            </header>
+
+            <form id="auditForm" class="form-grid">
+                <!-- Group 1: The Core -->
+                <div class="form-group">
+                    <label class="form-label" for="problem">The Core Problem</label>
+                    <textarea class="form-control" id="problem" name="problem" required
+                        placeholder="Describe the specific inefficiency or pain point (e.g., 'Manufacturers lose ₹5L annually due to...')"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="audience">Target User Segment</label>
+                    <input type="text" class="form-control" id="audience" name="audience" required
+                        placeholder="Who experiences this most acutely? (e.g., 'Operations heads in Tier 1 logistics')">
+                </div>
+
+                <!-- Group 2: The Truth -->
+                <div class="form-group">
+                    <label class="form-label" for="hacks">Existing Workarounds</label>
+                    <textarea class="form-control" id="hacks" name="hacks" required
+                        placeholder="How is this currently managed? (List the manual processes, spreadsheets, or sub-optimal tools)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="solution">The Proposed Edge</label>
+                    <textarea class="form-control" id="solution" name="solution" required
+                        placeholder="What is the unique insight or advantage that makes your approach defensible?"></textarea>
+                </div>
+
+
+                <!-- Group 3: Contact Info -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Work Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required
+                            placeholder="email@company.com">
+                    </div>
+                </div>
+
+                <div class="form-submit-wrap">
+                    <button type="submit" class="btn-audit-submit">Initiate Scientific Disproof &rarr;</button>
+                </div>
+
+                <p class="audit-footer-note">
+                    By submitting, you agree to the <strong>Moat Discovery Protocol</strong>.
+                    Verdicts are delivered within 48 hours.
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('auditForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            btn.textContent = 'Analyzing Signals...';
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Audit Signal Received. Our strategists are beginning the disproof phase. Check your inbox for the Initial Gap Report.');
+                window.location.href = 'index.html';
+            }, 1800);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Truth Hunt | Beforebuild.ai</title>
+    <meta name="description"
+        content="Deep human research and 10 'Mom Test' interviews to validate real pain intensity.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="audit-page">
+
+    <!-- Premium Background Effects -->
+    <div class="audit-hero-bg"></div>
+
+    <!-- Nav (Premium Synchronized) -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">BEFOREBUILD.AI</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#crisis" class="nav-link">Crisis</a></li>
+                <li><a href="index.html#philosophy" class="nav-link">Truth</a></li>
+                <li><a href="index.html#competition" class="nav-link">Giants</a></li>
+                <li><a href="index.html#sprint" class="nav-link">The Sprint</a></li>
+                <li><a href="index.html#deliverables" class="nav-link">Outcome</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="index.html#vision" class="nav-link">Vision</a></li>
+            </ul>
+            <a href="index.html#pricing" class="nav-cta">Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Glass Orb Background -->
+    <div class="glass-orb-wrap" aria-hidden="true">
+        <div class="glass-orb" id="orb"></div>
+    </div>
+
+    <!-- Tier Page Split Layout -->
+    <main class="tier-wrapper reveal">
+        <!-- Left Side: Product Detail -->
+        <div class="tier-detail-side">
+            <div class="tier-eyebrow">Tier 02 · Deep Discovery</div>
+            <h1 class="tier-title">The Truth Hunt</h1>
+            <div class="tier-price-tag">
+                ₹15,999
+                <span class="tier-price-label">Deep Human Research</span>
+            </div>
+            <p class="tier-description">We go beyond desk research to find the primary truth. Through 10 rigorously
+                conducted "Mom Test" interviews, we validate pain intensity and identify the exact "Hair-on-Fire" entry
+                point for your product.</p>
+
+            <div class="protocol-list">
+                <div class="protocol-item">
+                    <h4>The "Mom Test" Protocol</h4>
+                    <p>10 expert interviews with real users designed to extract hard behavioral facts rather than polite
+                        opinions.</p>
+                </div>
+                <div class="protocol-item">
+                    <h4>Problem Stack Ranking</h4>
+                    <p>We rank the Top 3 pain points by intensity and willingness-to-pay, identifying your strongest
+                        point of entry.</p>
+                </div>
+                <div class="protocol-item">
+                    <h4>Workaround Mapping</h4>
+                    <p>A detailed audit of current "hacks" and sub-optimal tools users are currently paying for to solve
+                        this problem.</p>
+                </div>
+                <div class="protocol-item">
+                    <h4>Strategic Pivot Roadmap</h4>
+                    <p>A data-backed plan for your next 90 days, whether that's a GO decision or a tactical pivot to a
+                        higher-survival zone.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Action Card -->
+        <div class="tier-purchase-card">
+            <header class="audit-header" style="text-align: left; margin-bottom: 2.5rem;">
+                <h2 style="font-family: var(--font-d); font-size: 1.75rem; font-weight: 850; margin-bottom: 0.5rem;">
+                    Commence the Hunt</h2>
+                <p style="font-size: 0.9rem; color: var(--text-2);">Define your target segment to start the discovery
+                    process.</p>
+            </header>
+
+            <form id="tierForm" class="form-grid">
+                <div class="form-group">
+                    <label class="form-label" for="audience">Target Audience Description</label>
+                    <textarea class="form-control" id="audience" name="audience" required
+                        placeholder="Who exactly should we talk to? (e.g., 'CTOs of Series A SaaS companies in Gurgaon')"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Work Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required
+                        placeholder="email@company.com">
+                </div>
+
+                <div class="form-submit-wrap">
+                    <button type="submit" class="btn-audit-submit">Initiate Truth Hunt &rarr;</button>
+                </div>
+
+                <p class="audit-footer-note" style="text-align: left;">
+                    Total: <strong>₹15,999</strong>. Secure payment via RBI-compliant gateway. Results delivered in 14
+                    days.
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('tierForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            btn.textContent = 'Securing Transaction...';
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Secure Pay Layer Active. (Simulation)');
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>

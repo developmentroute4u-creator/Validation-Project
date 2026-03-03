@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sanity Check | Beforebuild.ai</title>
+    <meta name="description" content="Quick 7-day desk research audit to validate your startup's core assumptions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="audit-page">
+
+    <!-- Premium Background Effects -->
+    <div class="audit-hero-bg"></div>
+
+    <!-- Nav (Premium Synchronized) -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">BEFOREBUILD.AI</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#crisis" class="nav-link">Crisis</a></li>
+                <li><a href="index.html#philosophy" class="nav-link">Truth</a></li>
+                <li><a href="index.html#competition" class="nav-link">Giants</a></li>
+                <li><a href="index.html#sprint" class="nav-link">The Sprint</a></li>
+                <li><a href="index.html#deliverables" class="nav-link">Outcome</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="index.html#vision" class="nav-link">Vision</a></li>
+            </ul>
+            <a href="index.html#pricing" class="nav-cta">Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Glass Orb Background -->
+    <div class="glass-orb-wrap" aria-hidden="true">
+        <div class="glass-orb" id="orb"></div>
+    </div>
+
+    <!-- Tier Page Split Layout -->
+    <main class="tier-wrapper reveal">
+        <!-- Left Side: Product Detail -->
+        <div class="tier-detail-side">
+            <div class="tier-eyebrow">Tier 01 · Rapid Validation</div>
+            <h1 class="tier-title">The Sanity Check</h1>
+            <div class="tier-price-tag">
+                ₹4,999
+                <span class="tier-price-label">7-Day Rapid Audit</span>
+            </div>
+            <p class="tier-description">Our base protocol for early-stage verification. We utilize India's most
+                comprehensive startup behavior dataset to identify structural gaps in your idea before you waste a
+                single rupee on building.</p>
+
+            <div class="protocol-list">
+                <div class="protocol-item">
+                    <h4>Desk Research Audit</h4>
+                    <p>An exhaustive scan of existing literature, industry reports, and proprietary data to map the
+                        current reality.</p>
+                </div>
+                <div class="protocol-item">
+                    <h4>Competitive Gap Analysis</h4>
+                    <p>Mapping where market leaders are failing today to identify your immediate point of entry.</p>
+                </div>
+                <div class="protocol-item">
+                    <h4>TAM/SAM Financial Modeling</h4>
+                    <p>Realistic modeling of your potential reach based on verified behavioral commitment metrics, not
+                        just population counts.</p>
+                </div>
+                <div class="protocol-item">
+                    <h4>The Verdict Consult</h4>
+                    <p>A 30-minute high-impact session with a lead strategist to deliver the bankable GO / PIVOT / KILL
+                        decision.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Action Card -->
+        <div class="tier-purchase-card">
+            <header class="audit-header" style="text-align: left; margin-bottom: 2.5rem;">
+                <h2 style="font-family: var(--font-d); font-size: 1.75rem; font-weight: 850; margin-bottom: 0.5rem;">
+                    Secure Your Audit</h2>
+                <p style="font-size: 0.9rem; color: var(--text-2);">Complete details below to initiate the protocol.</p>
+            </header>
+
+            <form id="tierForm" class="form-grid">
+                <div class="form-group">
+                    <label class="form-label" for="idea">Briefly Describe Your Idea</label>
+                    <textarea class="form-control" id="idea" name="idea" required
+                        placeholder="What specific problem are you addressing?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Work Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required
+                        placeholder="email@company.com">
+                </div>
+
+                <div class="form-submit-wrap">
+                    <button type="submit" class="btn-audit-submit">Purchase Sanity Check &rarr;</button>
+                </div>
+
+                <p class="audit-footer-note" style="text-align: left;">
+                    Total: <strong>₹4,999</strong>. Secure payment via RBI-compliant gateway. Verdict delivered in 7
+                    days.
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('tierForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            btn.textContent = 'Redirecting to Gateway...';
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Secure Transaction Layer Active. (Simulation)');
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
